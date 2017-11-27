@@ -1,0 +1,23 @@
+#!/usr/env/php
+<?php
+/**
+ * this is a short entry for swoole server manage.
+ */
+
+use App\Console\Controllers\ServerController;
+use Inhere\Console\Application;
+
+define('BASE_PATH', dirname(__DIR__));
+define('IN_SWOOLE', true);
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+$app = new Application();
+
+// register
+$app->controller('server', ServerController::class);
+
+// run
+$status = $app->runAction('server', $app->getInput()->getCommand(), true, true);
+
+$app->stop($status);

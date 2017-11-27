@@ -20,6 +20,15 @@ function di($name = null)
     return \Mco::$di;
 }
 
+function container($name = null)
+{
+    if ($name) {
+        return \Mco::$di->get($name);
+    }
+
+    return \Mco::$di;
+}
+
 function tl($key, array $args = [], $lang = null)
 {
     /** @see Language::translate() */

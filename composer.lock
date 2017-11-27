@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "068311b6a766143ecbc9b299e3fca3f1",
+    "content-hash": "abda896bf016db930edb7179886a27af",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -180,6 +180,48 @@
             "time": "2016-12-20T10:07:11+00:00"
         },
         {
+            "name": "inhere/asset-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inhere/php-asset-manager",
+                "reference": "f00e22a161de65cee49f63a7409274cf00b78d3c"
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/simple-print-tool": "Very lightweight data printing tools",
+                "matthiasmullie/minify": "compress css and js. if you want to compress assets."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Inhere\\Assets\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a php asset manager library.",
+            "homepage": "https://github.com/inhere/php-asset-manager",
+            "keywords": [
+                "asset",
+                "asset-manager",
+                "css",
+                "js",
+                "library"
+            ],
+            "time": "2017-11-21 14:44:04"
+        },
+        {
             "name": "inhere/console",
             "version": "dev-master",
             "source": {
@@ -233,7 +275,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-database",
-                "reference": "61e5abe690ed8539894913952d70a606ead0edd1"
+                "reference": "b968026ea2f9d79f6d6d1b01cf4028f21e1dc5a1"
             },
             "require": {
                 "inhere/library": "dev-master",
@@ -270,7 +312,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-11-03 07:49:55"
+            "time": "2017-11-27 02:07:12"
         },
         {
             "name": "inhere/event",
@@ -278,12 +320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-event-manager.git",
-                "reference": "3af385c79cd15f307a4c2ceb0048a6f01af12f80"
+                "reference": "1d406c30614eb060b8e67ed3d14f476dafe0d411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-event-manager/3af385c79cd15f307a4c2ceb0048a6f01af12f80.zip",
-                "reference": "3af385c79cd15f307a4c2ceb0048a6f01af12f80",
+                "url": "https://files.phpcomposer.com/files/inhere/php-event-manager/1d406c30614eb060b8e67ed3d14f476dafe0d411.zip",
+                "reference": "1d406c30614eb060b8e67ed3d14f476dafe0d411",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +359,7 @@
                 "event-dispatcher",
                 "library"
             ],
-            "time": "2017-11-18 09:39:58"
+            "time": "2017-11-27 02:00:20"
         },
         {
             "name": "inhere/http",
@@ -423,6 +465,51 @@
             "time": "2017-11-23 15:54:30"
         },
         {
+            "name": "inhere/micro-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inhere/php-microFramework",
+                "reference": "de08e740687c0207814fe3e59837b1875239d57e"
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool library",
+                "inhere/sroute": "Very lightweight and fast router"
+            },
+            "type": "framework",
+            "autoload": {
+                "classmap": [
+                    "./src/Mco.php"
+                ],
+                "psr-4": {
+                    "Mco\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "the micro framework of the php",
+            "homepage": "https://github.com/inhere/php-middleware",
+            "keywords": [
+                "framework",
+                "library",
+                "psr-15",
+                "psr-7"
+            ],
+            "time": "2017-11-27 15:42:41"
+        },
+        {
             "name": "inhere/middleware",
             "version": "dev-master",
             "source": {
@@ -474,16 +561,16 @@
         },
         {
             "name": "inhere/php-validate",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "a6425418e9c6b4db5f40dd8624adfa08d155dced"
+                "reference": "4ccfd631414884f9ae6899fe6f12bbc8719047a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-validate/a6425418e9c6b4db5f40dd8624adfa08d155dced.zip",
-                "reference": "a6425418e9c6b4db5f40dd8624adfa08d155dced",
+                "url": "https://files.phpcomposer.com/files/inhere/php-validate/4ccfd631414884f9ae6899fe6f12bbc8719047a0.zip",
+                "reference": "4ccfd631414884f9ae6899fe6f12bbc8719047a0",
                 "shasum": ""
             },
             "require": {
@@ -515,7 +602,7 @@
                 "library",
                 "validate"
             ],
-            "time": "2017-11-24T17:28:15+00:00"
+            "time": "2017-11-26T07:38:22+00:00"
         },
         {
             "name": "inhere/server",
@@ -576,12 +663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-simple-activeRecord.git",
-                "reference": "62145f24dab1fd7457871cbf0b7daea8d79e5ac3"
+                "reference": "2653a7a2acc9ecb55e678a319557cda98c8b9fe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/62145f24dab1fd7457871cbf0b7daea8d79e5ac3.zip",
-                "reference": "62145f24dab1fd7457871cbf0b7daea8d79e5ac3",
+                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/2653a7a2acc9ecb55e678a319557cda98c8b9fe1.zip",
+                "reference": "2653a7a2acc9ecb55e678a319557cda98c8b9fe1",
                 "shasum": ""
             },
             "require": {
@@ -623,7 +710,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-11-05 06:14:27"
+            "time": "2017-11-27 01:40:50"
         },
         {
             "name": "inhere/sroute",
@@ -1482,12 +1569,13 @@
                 "print",
                 "tool"
             ],
-            "time": "2017-10-23T06:38:31+00:00"
+            "time": "2017-10-23 06:38:31"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "inhere/asset-manager": 20,
         "inhere/library": 20,
         "inhere/console": 20,
         "inhere/database": 20,
@@ -1495,6 +1583,7 @@
         "inhere/event": 20,
         "inhere/http": 20,
         "inhere/middleware": 20,
+        "inhere/micro-framework": 20,
         "inhere/simple-active-record": 20,
         "inhere/server": 20,
         "inhere/simple-print-tool": 20

@@ -37,9 +37,6 @@
         "inhere/simple-print-tool": "dev-master"
     },
     "autoload": {
-        "classmap": [
-            "./src/system/Mgr.php"
-        ],
         "files": [
             "./app/Helper/Functions.php"
         ],

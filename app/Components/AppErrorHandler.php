@@ -9,7 +9,8 @@
 
 namespace App\Components;
 
-use Logger;
+use Psr\Log\LogLevel as Logger;
+use Inhere\Library\Components\ErrorPayload as AppError;
 
 /**
  * Class AppErrorHandler

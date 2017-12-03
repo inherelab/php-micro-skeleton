@@ -8,6 +8,7 @@
 
 namespace App\Providers;
 
+use Inhere\Library\Collections\Configuration;
 use Inhere\Library\DI\Container;
 use Inhere\Library\DI\ServiceProviderInterface;
 
@@ -20,9 +21,22 @@ class ConsoleServiceProvider implements ServiceProviderInterface
     /**
      * 注册一项服务(可能含有多个服务)提供者到容器中
      * @param Container $di
+     * @throws \RuntimeException
+     * @throws \RangeException
      */
     public function register(Container $di)
     {
-        // TODO: Implement register() method.
+        /** @var Configuration $config */
+        $config = $di->get('config');
+
+        $config->load(include BASE_PATH . '/conf/console.php');
+
+        // current env config file. e.g '/config/console/dev.php'
+        $envFile = get_path('conf/console/' . APP_ENV. '.php');
+
+        if (is_readable($envFile)) {
+            $config->load(include $envFile);
+        }
+
     }
 }

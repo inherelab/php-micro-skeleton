@@ -1,6 +1,6 @@
 <?php
 /**
- * common
+ * common constants
  */
 
 // Define some useful constants
@@ -21,3 +21,18 @@ define('APP_START_MEMORY', memory_get_usage());
 
 // @const HOSTNAME Current hostname
 define('HOSTNAME', explode('.', gethostname())[0]);
+
+// Env Detector settings
+
+define('HOST2ENV', [
+    // host keywords => env name
+    'InhereMac' => 'dev',
+]);
+
+define('DOMAIN2ENV', [
+    // domain keywords => env name
+    'pre' => 'pre',
+    'test' => 'test',
+    '127.0.0.1' => 'dev',
+    'dev' => 'dev'
+]);

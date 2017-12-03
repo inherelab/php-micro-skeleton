@@ -62,7 +62,7 @@ return [
             '_args' => [
                 'files',
                 [
-                    'path' => app_path('@user/tmp/caches'),
+                    'path' => alias_path('@user/tmp/caches'),
                     'securityKey' => 's6df89rtdlw',
                 ]
             ]

@@ -1,10 +1,27 @@
 #!/usr/bin/env php
 <?php
 /**
- * this is entry for console application.
+ * entry file for CLI
+ *
+ * @var Mco\Console\App $app
+ * @var Inhere\Library\DI\Container $di
  */
 
-define('BASE_PATH', dirname(__DIR__) );
+define('RUN_MODE',  'cli');
 
+include dirname(__DIR__) . '/conf/defined.php';
 require dirname(__DIR__) . '/vendor/autoload.php';
-require dirname(__DIR__) . '/src/boot/console.php';
+
+$di = new \Inhere\Library\DI\Container();
+
+// boot
+$app = \App\Bootstrap::boot($di);
+
+// in the unit testing.
+if (IN_CODE_TESTING) {
+  return $app;
+}
+
+require dirname(__DIR__) . '/app/Console/routes.php';
+
+$app->run();

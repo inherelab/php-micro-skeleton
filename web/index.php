@@ -1,19 +1,15 @@
 <?php
 /**
- *
  * @var \Mco\Web\App $app
+ * @var Inhere\Library\DI\Container $di
  */
 
-use Inhere\Library\DI\Container;
-
 define('RUN_MODE', 'web');
-
-include dirname(__DIR__) . '/config/defined.php';
-require dirname(__DIR__) . '/vendor/autoload.php';
-
 defined('IN_SWOOLE') || define('IN_SWOOLE', false);
 
-/** @var Container $di */
+include dirname(__DIR__) . '/conf/defined.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
+
 $di = new \Inhere\Library\DI\Container();
 
 // boot

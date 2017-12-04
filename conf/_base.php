@@ -25,8 +25,8 @@ return [
         'logger' => [
             'target'       => LiteLogger::class,
             'name'         => 'app',
-            'logFile'      => '@user/tmp/logs/application.log',
-            'basePath'     => '@user/tmp/logs',
+            'logFile'      => '@tmp/logs/application.log',
+            'basePath'     => '@tmp/logs',
             'level'        => LiteLogger::DEBUG,
             'splitType'    => 1,
             'bufferSize'   => 1000, // 1000,
@@ -36,7 +36,7 @@ return [
             'target'    => Language::class,
             'lang'      => 'zh-CN',
             'langs'     => ['en', 'zh-CN'],
-            'basePath'  => dirname(__DIR__).'/resources/languages',
+            'basePath'  => dirname(__DIR__).'/res/languages',
             'langFiles' => [
                 'response.php',
             ],

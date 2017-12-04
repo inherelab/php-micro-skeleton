@@ -5,7 +5,7 @@
  * @SWG\Response(
  *   response="default",
  *   description="The default response data.",
- *   @SWG\Schema(ref="#/definitions/DefaultResponse")
+ *   @SWG\Schema(ref="#/definitions/Success")
  * )
  *
  * @SWG\Response(

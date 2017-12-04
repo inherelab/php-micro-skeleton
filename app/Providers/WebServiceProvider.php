@@ -11,6 +11,7 @@ namespace App\Providers;
 use Inhere\Library\Collections\Configuration;
 use Inhere\Library\DI\Container;
 use Inhere\Library\DI\ServiceProviderInterface;
+use Inhere\Route\ORouter;
 
 /**
  * Class WebServiceProvider
@@ -21,6 +22,7 @@ class WebServiceProvider implements ServiceProviderInterface
     /**
      * 注册一项服务(可能含有多个服务)提供者到容器中
      * @param Container $di
+     * @throws \InvalidArgumentException
      * @throws \RuntimeException
      * @throws \RangeException
      */
@@ -38,6 +40,19 @@ class WebServiceProvider implements ServiceProviderInterface
             $config->load(include $envFile);
         }
 
+        // load services from config
+        $di->sets($config->remove('services'));
+
+        $this->loadWebRoutes($di->get('router'));
+
         // ...
+    }
+
+    /**
+     * @param ORouter $router
+     */
+    private function loadWebRoutes(ORouter $router)
+    {
+        include BASE_PATH . '/app/Http/routes.php';
     }
 }

@@ -31,6 +31,10 @@ class Bootstrap
         return (new self)->run($di);
     }
 
+    /**
+     * @param Container $di
+     * @return CliApp|WebApp
+     */
     protected function run(Container $di)
     {
         // init .env
@@ -53,20 +57,40 @@ class Bootstrap
             $app = $this->loadCliServices($di);
         }
 
-        // load services from config
-        $di->sets($di['config']->remove('services'));
-
         $this->init($di);
 
         return $app;
     }
 
+    /**
+     * @param Container $di
+     */
     public function init(Container $di)
     {
         // error report level
 //        error_reporting($config->get('phpErrorReport', E_ERROR));
         // date timezone
 //        date_default_timezone_set($config->get('timezone', 'UTC'));
+
+        switch (APP_ENV) {
+            case APP_DEV:
+            case APP_TEST:
+                ini_set('display_errors', 1);
+                ini_set('display_startup_errors', 1);
+                error_reporting(-1);
+                break;
+            default:
+                ini_set('display_errors', 0);
+                ini_set('display_startup_errors', 0);
+                error_reporting(0);
+                break;
+        }
+
+        if (PHP_SAPI === 'cli') {
+            ini_set('html_errors', 0);
+        } else {
+            ini_set('html_errors', 1);
+        }
 
         // Set the MB extension encoding to the same character set
         if (\function_exists('mb_internal_encoding')) {
@@ -77,6 +101,10 @@ class Bootstrap
         register_shutdown_function(AppListener::class . '::onRuntimeEnd', $di);
     }
 
+    /**
+     * @param Container $di
+     * @return WebApp
+     */
     public function loadWebServices(Container $di)
     {
         // Detect environment: allow change env by HOSTNAME OR HTTP_HOST
@@ -98,6 +126,10 @@ class Bootstrap
         return $app;
     }
 
+    /**
+     * @param Container $di
+     * @return CliApp
+     */
     public function loadCliServices(Container $di)
     {
         // Detect environment: allow change env by HOSTNAME
@@ -110,6 +142,7 @@ class Bootstrap
 
         // some services for CLI
         $di->registerServiceProvider(new ConsoleServiceProvider());
+
         $app = new CliApp($di);
 
         // save to DI

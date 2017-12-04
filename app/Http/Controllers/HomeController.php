@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use Inhere\Library\Utils\LiteLogger;
+use Mco\Helpers\Respond;
 use Mco\Web\BaseController;
 
 /**
@@ -32,6 +33,21 @@ class HomeController extends BaseController
         return $this->renderContent($content);
     }
 
+    public function routesAction($ctx)
+    {
+        /** @var \Inhere\Route\ORouter $router */
+        $router = \Mco::$di->get('router');
+
+        // Setting a header
+        $ctx->res->setHeader('Content-Type', 'application/json');
+
+        return Respond::json([
+            'static' => $router->getStaticRoutes(),
+            'regular' => $router->getRegularRoutes(),
+            'vague' => $router->getVagueRoutes(),
+        ]);
+    }
+
     public function testAction()
     {
 
@@ -52,11 +68,7 @@ class HomeController extends BaseController
 
     public function configAction()
     {
-        Mco::$app->output->formatJson([
-            'phpVersion' => PHP_VERSION,
-            'env' => Mco::$app->config('env'),
-            'debug' => Mco::$app->isDebug(),
-        ]);
+        echo 'ddd';
     }
 
     public function json()

@@ -21,6 +21,7 @@ class ConsoleServiceProvider implements ServiceProviderInterface
     /**
      * 注册一项服务(可能含有多个服务)提供者到容器中
      * @param Container $di
+     * @throws \InvalidArgumentException
      * @throws \RuntimeException
      * @throws \RangeException
      */
@@ -37,6 +38,9 @@ class ConsoleServiceProvider implements ServiceProviderInterface
         if (is_readable($envFile)) {
             $config->load(include $envFile);
         }
+
+        // load services from config
+        $di->sets($config->remove('services'));
 
     }
 }

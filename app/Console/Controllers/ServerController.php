@@ -57,7 +57,8 @@ class ServerController extends Controller
         $this->write("Document root is <comment>$workDir/web</comment>");
         $this->write('You can use <comment>CTRL + C</comment> to stop run.');
 
-        $command = "php -S {$server} -t web web/index.php";
+        // $command = "php -S {$server} -t web web/index.php";
+        $command = "php -S {$server} -t web";
 
         if (function_exists('system')) {
             system($command);

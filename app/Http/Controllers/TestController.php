@@ -16,6 +16,25 @@ use Mco\Web\BaseController;
  */
 class TestController extends BaseController
 {
+    /**
+     * @SWG\Post(
+     *      tags={"user.follow"},
+     *      path="/user/follow",
+     *      summary="用户关注 - 关注一个人",
+     *      @SWG\Parameter(ref="#/parameters/api_version_in_query"),
+     *      @SWG\Parameter(
+     *          name="BodyData",
+     *          in="body",
+     *          @SWG\Schema(
+     *              type="object",
+     *              required={"userId", "targetId"},
+     *              @SWG\Property(type="integer", property="userId", description="current user ID"),
+     *              @SWG\Property(type="integer", property="targetId", description="target user ID")
+     *          )
+     *      ),
+     *      @SWG\Response(response="200", ref="#/responses/default")
+     * )
+     */
     public function indexAction()
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;

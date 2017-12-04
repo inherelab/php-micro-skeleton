@@ -9,7 +9,7 @@
  *     @SWG\Info(
  *         version="1.0.0",
  *         title="UEM - User extension information module",
- *         description="## 用户扩展信息模块(`env: dev`)
+ *         description="## API模块(`env: dev`)
  * test"
  *     ),
  *     @SWG\ExternalDocumentation(

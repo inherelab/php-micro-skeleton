@@ -10,6 +10,7 @@ use Mco\Web\RouteDispatcher;
 
 return Arr::merge(require __DIR__ . '/_base.php', [
     'application' => [
+        'host' => 'localhost',
         'baseTitle' => 'ArtFonts',
         'description' => 'application description',
         'keywords' => 'application keywords',

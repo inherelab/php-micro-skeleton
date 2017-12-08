@@ -20,4 +20,12 @@ if (IN_CODE_TESTING) {
     return $app;
 }
 
+$app->use(function ($req, $h) {
+    echo "ddd\n";
+    $res = $h->handle($req);
+    echo "ddd-fff\n";
+
+    return $res;
+});
+
 $app->run();

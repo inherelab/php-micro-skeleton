@@ -19,6 +19,12 @@ class HomeController extends BaseController
 {
     public function indexAction()
     {
+        echo 'OOO';
+        return 'hello, world';
+    }
+
+    public function logAction()
+    {
         $content = 'hello, welcome!! this is ' . __METHOD__;
 //de(\Mco::get('config')->all());
 

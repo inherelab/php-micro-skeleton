@@ -9,6 +9,7 @@ use Inhere\Library\Utils\LiteLogger;
 use Overtrue\Pinyin\Pinyin;
 
 return [
+    'name'    => 'My App',
     'debug'    => false,
     'env'      => 'pdt',
     'charset'  => 'UTF-8',

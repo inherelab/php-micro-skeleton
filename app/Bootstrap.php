@@ -24,6 +24,10 @@ use Mco\Console\App as CliApp;
  */
 class Bootstrap
 {
+    /**
+     * @param Container $di
+     * @return CliApp|WebApp
+     */
     public static function boot(Container $di)
     {
         \Mco::$di = $di;
@@ -31,11 +35,7 @@ class Bootstrap
         return (new self)->run($di);
     }
 
-    /**
-     * @param Container $di
-     * @return CliApp|WebApp
-     */
-    protected function run(Container $di)
+    protected function prepare()
     {
         // init .env
         PhpDotEnv::load(BASE_PATH);
@@ -47,6 +47,16 @@ class Bootstrap
         \defined('IN_CODE_TESTING') || \define('IN_CODE_TESTING', false);
 
         date_default_timezone_set(env('TIMEZONE', 'UTC'));
+    }
+
+    /**
+     * @param Container $di
+     * @return CliApp|WebApp
+     * @throws \InvalidArgumentException
+     */
+    protected function run(Container $di)
+    {
+        $this->prepare();
 
         // Read common services
         $di->registerServiceProvider(new CommonServiceProvider());
@@ -67,8 +77,6 @@ class Bootstrap
      */
     public function init(Container $di)
     {
-        // error report level
-//        error_reporting($config->get('phpErrorReport', E_ERROR));
         // date timezone
 //        date_default_timezone_set($config->get('timezone', 'UTC'));
 
@@ -104,6 +112,7 @@ class Bootstrap
     /**
      * @param Container $di
      * @return WebApp
+     * @throws \InvalidArgumentException
      */
     public function loadWebServices(Container $di)
     {
@@ -118,10 +127,11 @@ class Bootstrap
         // Some services for WEB
         $di->registerServiceProvider(new WebServiceProvider());
 
-        $app = new WebApp($di);
         $em = $di->get('eventManager');
         $em->attach('app', new AppListener());
-        // $app->setEventsManager($em);
+
+        $app = new WebApp($di);
+        $app->setEventManager($em);
 
         return $app;
     }
@@ -143,15 +153,15 @@ class Bootstrap
         // some services for CLI
         $di->registerServiceProvider(new ConsoleServiceProvider());
 
-        $app = new CliApp($di);
-
-        // save to DI
-        $di->set('app', $app);
-
         $em = $di->get('eventManager');
         $em->attach('app', new AppListener());
 
-        // $app->setEventManager($em);
+        $app = new CliApp($di);
+
+        // save to DI
+        // $di->set('app', $app);
+
+        $app->setEventManager($em);
 
         return $app;
     }

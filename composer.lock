@@ -4,130 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "abda896bf016db930edb7179886a27af",
+    "content-hash": "e22fc0862743bc980f317a7ee052fb5b",
     "packages": [
-        {
-            "name": "doctrine/annotations",
-            "version": "v1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/annotations/5beebb01b025c94e93686b7a0ed3edae81fe3e7f.zip",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/lexer": "1.*",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "Docblock Annotations Parser",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "annotations",
-                "docblock",
-                "parser"
-            ],
-            "time": "2017-07-22T10:58:02+00:00"
-        },
-        {
-            "name": "doctrine/lexer",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/lexer.git",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/lexer/83893c552fd2045dd78aef794c31e694c37c0b8c.zip",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Lexer\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "lexer",
-                "parser"
-            ],
-            "time": "2014-09-09T13:34:57+00:00"
-        },
         {
             "name": "guzzlehttp/promises",
             "version": "v1.3.1",
@@ -219,7 +97,7 @@
                 "js",
                 "library"
             ],
-            "time": "2017-11-21 14:44:04"
+            "time": "2017-11-21T14:44:04+00:00"
         },
         {
             "name": "inhere/console",
@@ -227,12 +105,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "32f3f95699e01cf451b4234ec418be55870bb558"
+                "reference": "891d84f989ce6b8ca95a943e9995b334928b40bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-console/32f3f95699e01cf451b4234ec418be55870bb558.zip",
-                "reference": "32f3f95699e01cf451b4234ec418be55870bb558",
+                "url": "https://files.phpcomposer.com/files/inhere/php-console/891d84f989ce6b8ca95a943e9995b334928b40bd.zip",
+                "reference": "891d84f989ce6b8ca95a943e9995b334928b40bd",
                 "shasum": ""
             },
             "require": {
@@ -258,16 +136,18 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "a php console application library.",
+            "description": "a php console library, provide console argument parse,color style,user interactive, information show.",
             "homepage": "https://github.com/inhere/php-console",
             "keywords": [
+                "cli",
                 "command",
+                "command-line",
                 "console",
                 "console-application",
                 "console-color",
                 "library"
             ],
-            "time": "2017-11-26 11:54:01"
+            "time": "2017-11-29T16:22:56+00:00"
         },
         {
             "name": "inhere/database",
@@ -312,7 +192,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-11-27 02:07:12"
+            "time": "2017-11-27T02:07:12+00:00"
         },
         {
             "name": "inhere/event",
@@ -320,12 +200,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-event-manager.git",
-                "reference": "1d406c30614eb060b8e67ed3d14f476dafe0d411"
+                "reference": "b84d8a30e3cb42d87f9c1c486f08e954153b1e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-event-manager/1d406c30614eb060b8e67ed3d14f476dafe0d411.zip",
-                "reference": "1d406c30614eb060b8e67ed3d14f476dafe0d411",
+                "url": "https://files.phpcomposer.com/files/inhere/php-event-manager/b84d8a30e3cb42d87f9c1c486f08e954153b1e27.zip",
+                "reference": "b84d8a30e3cb42d87f9c1c486f08e954153b1e27",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +239,7 @@
                 "event-dispatcher",
                 "library"
             ],
-            "time": "2017-11-27 02:00:20"
+            "time": "2017-12-09T09:11:18+00:00"
         },
         {
             "name": "inhere/http",
@@ -367,12 +247,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-http.git",
-                "reference": "3d3a6f8d8bbc1763a31e475d436922c4d7f7d444"
+                "reference": "4d456454db5f778587f6096ac4a2fbc47ec50285"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-http/3d3a6f8d8bbc1763a31e475d436922c4d7f7d444.zip",
-                "reference": "3d3a6f8d8bbc1763a31e475d436922c4d7f7d444",
+                "url": "https://files.phpcomposer.com/files/inhere/php-http/4d456454db5f778587f6096ac4a2fbc47ec50285.zip",
+                "reference": "4d456454db5f778587f6096ac4a2fbc47ec50285",
                 "shasum": ""
             },
             "require": {
@@ -408,7 +288,7 @@
                 "library",
                 "tool"
             ],
-            "time": "2017-11-09 05:54:58"
+            "time": "2017-12-08T08:19:31+00:00"
         },
         {
             "name": "inhere/library",
@@ -416,12 +296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-librarys.git",
-                "reference": "70c633507279dcd4258e36fd718e79f0300a64da"
+                "reference": "c1c3df1bdb4a5b15a9747b7b2d3159ce085d2ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-librarys/70c633507279dcd4258e36fd718e79f0300a64da.zip",
-                "reference": "70c633507279dcd4258e36fd718e79f0300a64da",
+                "url": "https://files.phpcomposer.com/files/inhere/php-librarys/c1c3df1bdb4a5b15a9747b7b2d3159ce085d2ed8.zip",
+                "reference": "c1c3df1bdb4a5b15a9747b7b2d3159ce085d2ed8",
                 "shasum": ""
             },
             "require": {
@@ -462,7 +342,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-11-23 15:54:30"
+            "time": "2017-12-04T15:43:17+00:00"
         },
         {
             "name": "inhere/micro-framework",
@@ -470,7 +350,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework",
-                "reference": "de08e740687c0207814fe3e59837b1875239d57e"
+                "reference": "026ba240f5be03613bf124ea7bb61330fcf17d57"
             },
             "require": {
                 "php": ">=7.0.0"
@@ -507,7 +387,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2017-11-27 15:42:41"
+            "time": "2017-12-08T07:18:07+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -515,12 +395,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-middleware.git",
-                "reference": "4d63c5a7704e9b4ce4e688a3b207520a432511a5"
+                "reference": "f43b6c42efdf7cb6d8f50370d81f7735ea8467fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-middleware/4d63c5a7704e9b4ce4e688a3b207520a432511a5.zip",
-                "reference": "4d63c5a7704e9b4ce4e688a3b207520a432511a5",
+                "url": "https://files.phpcomposer.com/files/inhere/php-middleware/f43b6c42efdf7cb6d8f50370d81f7735ea8467fb.zip",
+                "reference": "f43b6c42efdf7cb6d8f50370d81f7735ea8467fb",
                 "shasum": ""
             },
             "require": {
@@ -557,20 +437,20 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2017-11-03 08:47:32"
+            "time": "2017-12-09T09:38:29+00:00"
         },
         {
             "name": "inhere/php-validate",
-            "version": "v2.3.2",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "4ccfd631414884f9ae6899fe6f12bbc8719047a0"
+                "reference": "9ae5a614e0b0c9376a35e50f10330e5f6afd41c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-validate/4ccfd631414884f9ae6899fe6f12bbc8719047a0.zip",
-                "reference": "4ccfd631414884f9ae6899fe6f12bbc8719047a0",
+                "url": "https://files.phpcomposer.com/files/inhere/php-validate/9ae5a614e0b0c9376a35e50f10330e5f6afd41c5.zip",
+                "reference": "9ae5a614e0b0c9376a35e50f10330e5f6afd41c5",
                 "shasum": ""
             },
             "require": {
@@ -596,13 +476,13 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "a simple validate library of the php",
+            "description": "a simple validate, filter library of the php",
             "homepage": "http://github.com/inhere/php-validate",
             "keywords": [
                 "library",
                 "validate"
             ],
-            "time": "2017-11-26T07:38:22+00:00"
+            "time": "2017-12-07T02:54:09+00:00"
         },
         {
             "name": "inhere/server",
@@ -610,12 +490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "8043c85c0462f12cc74033918473831570c86980"
+                "reference": "fcd4a226de90a811e0a21d78ec339c5b81dd7d78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-server/8043c85c0462f12cc74033918473831570c86980.zip",
-                "reference": "8043c85c0462f12cc74033918473831570c86980",
+                "url": "https://files.phpcomposer.com/files/inhere/php-server/fcd4a226de90a811e0a21d78ec339c5b81dd7d78.zip",
+                "reference": "fcd4a226de90a811e0a21d78ec339c5b81dd7d78",
                 "shasum": ""
             },
             "require": {
@@ -655,7 +535,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2017-11-02 10:05:01"
+            "time": "2017-12-08T07:19:18+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -710,7 +590,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-11-27 01:40:50"
+            "time": "2017-11-27T01:40:50+00:00"
         },
         {
             "name": "inhere/sroute",
@@ -718,12 +598,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "27e6603dcaf63cd207cb889e2298d125578dce90"
+                "reference": "b376fb000d32a9a802fb16a48366792212acdd7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/27e6603dcaf63cd207cb889e2298d125578dce90.zip",
-                "reference": "27e6603dcaf63cd207cb889e2298d125578dce90",
+                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/b376fb000d32a9a802fb16a48366792212acdd7b.zip",
+                "reference": "b376fb000d32a9a802fb16a48366792212acdd7b",
                 "shasum": ""
             },
             "require": {
@@ -757,7 +637,7 @@
                 "route",
                 "router"
             ],
-            "time": "2017-11-23 02:11:05"
+            "time": "2017-12-07T11:50:21+00:00"
         },
         {
             "name": "league/plates",
@@ -1274,66 +1154,17 @@
             "time": "2017-01-02T13:31:39+00:00"
         },
         {
-            "name": "symfony/finder",
-            "version": "v3.3.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "138af5ec075d4b1d1bd19de08c38a34bb2d7d880"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/finder/138af5ec075d4b1d1bd19de08c38a34bb2d7d880.zip",
-                "reference": "138af5ec075d4b1d1bd19de08c38a34bb2d7d880",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Finder\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-11-05T15:47:03+00:00"
-        },
-        {
             "name": "symfony/process",
-            "version": "v3.3.13",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d"
+                "reference": "db25e810fd5e124085e3777257d0cf4ae533d0ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/process/a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d.zip",
-                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
+                "url": "https://files.phpcomposer.com/files/symfony/process/db25e810fd5e124085e3777257d0cf4ae533d0ea.zip",
+                "reference": "db25e810fd5e124085e3777257d0cf4ae533d0ea",
                 "shasum": ""
             },
             "require": {
@@ -1342,7 +1173,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1369,11 +1200,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-13T15:31:11+00:00"
+            "time": "2017-11-22T12:18:49+00:00"
         },
         {
             "name": "windwalker/compare",
-            "version": "3.2.7",
+            "version": "3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ventoviro/windwalker-compare.git",
@@ -1417,7 +1248,7 @@
         },
         {
             "name": "windwalker/query",
-            "version": "3.2.7",
+            "version": "3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ventoviro/windwalker-query.git",
@@ -1460,71 +1291,131 @@
                 "windwalker"
             ],
             "time": "2017-10-16T08:38:13+00:00"
-        },
-        {
-            "name": "zircote/swagger-php",
-            "version": "2.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "5393727e0c2fe822252f82230a5975572ca32d45"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/zircote/swagger-php/5393727e0c2fe822252f82230a5975572ca32d45.zip",
-                "reference": "5393727e0c2fe822252f82230a5975572ca32d45",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "*",
-                "php": ">=5.6",
-                "symfony/finder": ">=2.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": ">=4.8 <=5.6",
-                "squizlabs/php_codesniffer": ">=2.7",
-                "zendframework/zend-form": "<2.8"
-            },
-            "bin": [
-                "bin/swagger"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Swagger\\": "src"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache2"
-            ],
-            "authors": [
-                {
-                    "name": "Robert Allen",
-                    "email": "zircote@gmail.com",
-                    "homepage": "http://www.zircote.com"
-                },
-                {
-                    "name": "Bob Fanger",
-                    "email": "bfanger@gmail.com",
-                    "homepage": "http://bfanger.nl"
-                }
-            ],
-            "description": "Swagger-PHP - Generate interactive documentation for your RESTful API using phpdoc annotations",
-            "homepage": "https://github.com/zircote/swagger-php/",
-            "keywords": [
-                "api",
-                "json",
-                "rest",
-                "service discovery"
-            ],
-            "time": "2017-10-27T13:08:09+00:00"
         }
     ],
     "packages-dev": [
+        {
+            "name": "doctrine/annotations",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/doctrine/annotations/5beebb01b025c94e93686b7a0ed3edae81fe3e7f.zip",
+                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2017-07-22T10:58:02+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/doctrine/lexer/83893c552fd2045dd78aef794c31e694c37c0b8c.zip",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09T13:34:57+00:00"
+        },
         {
             "name": "inhere/simple-print-tool",
             "version": "dev-master",
@@ -1569,7 +1460,118 @@
                 "print",
                 "tool"
             ],
-            "time": "2017-10-23 06:38:31"
+            "time": "2017-10-23T06:38:31+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "c9cdda4dc4a3182d8d6daeebce4a25fef078ea4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/symfony/finder/c9cdda4dc4a3182d8d6daeebce4a25fef078ea4c.zip",
+                "reference": "c9cdda4dc4a3182d8d6daeebce4a25fef078ea4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-11-07T14:45:01+00:00"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "2.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "8b42fdc3d8c5a5e0d1f8d344aa359822c9f085e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/zircote/swagger-php/8b42fdc3d8c5a5e0d1f8d344aa359822c9f085e0.zip",
+                "reference": "8b42fdc3d8c5a5e0d1f8d344aa359822c9f085e0",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=5.6",
+                "symfony/finder": ">=2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8.35 <=5.6",
+                "squizlabs/php_codesniffer": ">=2.7",
+                "zendframework/zend-form": "<2.8"
+            },
+            "bin": [
+                "bin/swagger"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swagger\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com",
+                    "homepage": "http://www.zircote.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "http://bfanger.nl"
+                }
+            ],
+            "description": "Swagger-PHP - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "time": "2017-12-01T09:22:05+00:00"
         }
     ],
     "aliases": [],

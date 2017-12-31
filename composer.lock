@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e22fc0862743bc980f317a7ee052fb5b",
+    "content-hash": "ea324958b17f9bcc20edc3e13defa47f",
     "packages": [
         {
             "name": "guzzlehttp/promises",
@@ -63,7 +63,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-asset-manager",
-                "reference": "f00e22a161de65cee49f63a7409274cf00b78d3c"
+                "reference": "be4a4075aa7bbc74820ec3c6aed001fe9cefada5"
             },
             "require": {
                 "php": ">=7.0.0"
@@ -97,7 +97,7 @@
                 "js",
                 "library"
             ],
-            "time": "2017-11-21T14:44:04+00:00"
+            "time": "2017-12-14T05:08:02+00:00"
         },
         {
             "name": "inhere/console",
@@ -105,19 +105,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "891d84f989ce6b8ca95a943e9995b334928b40bd"
+                "reference": "03c3721993ce953f55ff9f698c1e703ecd61af07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-console/891d84f989ce6b8ca95a943e9995b334928b40bd.zip",
-                "reference": "891d84f989ce6b8ca95a943e9995b334928b40bd",
+                "url": "https://files.phpcomposer.com/files/inhere/php-console/03c3721993ce953f55ff9f698c1e703ecd61af07.zip",
+                "reference": "03c3721993ce953f55ff9f698c1e703ecd61af07",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0"
             },
             "suggest": {
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
+                "symfony/process": "php process operation",
+                "text/template": "Single-Class string template engine for PHP5/7 supporting if/loops/filters"
             },
             "type": "library",
             "autoload": {
@@ -136,7 +137,7 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "a php console library, provide console argument parse,color style,user interactive, information show.",
+            "description": "a php console library, provide console argument parse, console controller/command run, color style, user interactive, information show.",
             "homepage": "https://github.com/inhere/php-console",
             "keywords": [
                 "cli",
@@ -147,7 +148,7 @@
                 "console-color",
                 "library"
             ],
-            "time": "2017-11-29T16:22:56+00:00"
+            "time": "2017-12-28T11:28:24+00:00"
         },
         {
             "name": "inhere/database",
@@ -200,12 +201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-event-manager.git",
-                "reference": "b84d8a30e3cb42d87f9c1c486f08e954153b1e27"
+                "reference": "e224a5ef5cdae70c2fd7cc5a7f3beeb4b4a380b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-event-manager/b84d8a30e3cb42d87f9c1c486f08e954153b1e27.zip",
-                "reference": "b84d8a30e3cb42d87f9c1c486f08e954153b1e27",
+                "url": "https://files.phpcomposer.com/files/inhere/php-event-manager/e224a5ef5cdae70c2fd7cc5a7f3beeb4b4a380b1.zip",
+                "reference": "e224a5ef5cdae70c2fd7cc5a7f3beeb4b4a380b1",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +240,7 @@
                 "event-dispatcher",
                 "library"
             ],
-            "time": "2017-12-09T09:11:18+00:00"
+            "time": "2017-12-29T15:25:06+00:00"
         },
         {
             "name": "inhere/http",
@@ -296,12 +297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-librarys.git",
-                "reference": "c1c3df1bdb4a5b15a9747b7b2d3159ce085d2ed8"
+                "reference": "4fbd27931d9199bda4acd0d342dc902b379a51d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-librarys/c1c3df1bdb4a5b15a9747b7b2d3159ce085d2ed8.zip",
-                "reference": "c1c3df1bdb4a5b15a9747b7b2d3159ce085d2ed8",
+                "url": "https://files.phpcomposer.com/files/inhere/php-librarys/4fbd27931d9199bda4acd0d342dc902b379a51d8.zip",
+                "reference": "4fbd27931d9199bda4acd0d342dc902b379a51d8",
                 "shasum": ""
             },
             "require": {
@@ -342,7 +343,87 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-12-04T15:43:17+00:00"
+            "time": "2017-12-26T13:32:50+00:00"
+        },
+        {
+            "name": "inhere/lite-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inhere/php-lite-cache",
+                "reference": "fb2871d458fa522039a66f93a917e060e213e44e"
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "suggest": {
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Inhere\\LiteCache\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple cache client tool library of the php",
+            "homepage": "https://github.com/inhere/php-lite-cache",
+            "keywords": [
+                "library",
+                "memcache",
+                "redis"
+            ],
+            "time": "2017-12-16T13:36:13+00:00"
+        },
+        {
+            "name": "inhere/lite-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inhere/php-lite-database",
+                "reference": "ce3ee37c54fe86c49b0afa5397aa4683f58b850f"
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Inhere\\LiteDb\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple db tool library of the php",
+            "homepage": "https://github.com/inhere/php-web-library",
+            "keywords": [
+                "library",
+                "mongo",
+                "mysql",
+                "pdo"
+            ],
+            "time": "2017-12-16T11:09:55+00:00"
         },
         {
             "name": "inhere/micro-framework",
@@ -350,7 +431,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework",
-                "reference": "026ba240f5be03613bf124ea7bb61330fcf17d57"
+                "reference": "980af266a72bf606e627a223d2727e410739a51d"
             },
             "require": {
                 "php": ">=7.0.0"
@@ -387,7 +468,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2017-12-08T07:18:07+00:00"
+            "time": "2017-12-11T15:29:59+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -395,12 +476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-middleware.git",
-                "reference": "f43b6c42efdf7cb6d8f50370d81f7735ea8467fb"
+                "reference": "b7c5dcc7e3cc7984c859c3b1d2e0d1564deacdbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-middleware/f43b6c42efdf7cb6d8f50370d81f7735ea8467fb.zip",
-                "reference": "f43b6c42efdf7cb6d8f50370d81f7735ea8467fb",
+                "url": "https://files.phpcomposer.com/files/inhere/php-middleware/b7c5dcc7e3cc7984c859c3b1d2e0d1564deacdbd.zip",
+                "reference": "b7c5dcc7e3cc7984c859c3b1d2e0d1564deacdbd",
                 "shasum": ""
             },
             "require": {
@@ -437,20 +518,20 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2017-12-09T09:38:29+00:00"
+            "time": "2017-12-12T02:31:25+00:00"
         },
         {
             "name": "inhere/php-validate",
-            "version": "v2.4.2",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "9ae5a614e0b0c9376a35e50f10330e5f6afd41c5"
+                "reference": "2c452c91ae4d75a4446ed6e19433f3ad0c897dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-validate/9ae5a614e0b0c9376a35e50f10330e5f6afd41c5.zip",
-                "reference": "9ae5a614e0b0c9376a35e50f10330e5f6afd41c5",
+                "url": "https://files.phpcomposer.com/files/inhere/php-validate/2c452c91ae4d75a4446ed6e19433f3ad0c897dbc.zip",
+                "reference": "2c452c91ae4d75a4446ed6e19433f3ad0c897dbc",
                 "shasum": ""
             },
             "require": {
@@ -482,7 +563,7 @@
                 "library",
                 "validate"
             ],
-            "time": "2017-12-07T02:54:09+00:00"
+            "time": "2017-12-26T06:22:45+00:00"
         },
         {
             "name": "inhere/server",
@@ -490,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "fcd4a226de90a811e0a21d78ec339c5b81dd7d78"
+                "reference": "ad50b6ee60778c97a60b6a8e149f639af40a44e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-server/fcd4a226de90a811e0a21d78ec339c5b81dd7d78.zip",
-                "reference": "fcd4a226de90a811e0a21d78ec339c5b81dd7d78",
+                "url": "https://files.phpcomposer.com/files/inhere/php-server/ad50b6ee60778c97a60b6a8e149f639af40a44e2.zip",
+                "reference": "ad50b6ee60778c97a60b6a8e149f639af40a44e2",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +616,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2017-12-08T07:19:18+00:00"
+            "time": "2017-12-21T15:43:30+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -543,20 +624,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-simple-activeRecord.git",
-                "reference": "2653a7a2acc9ecb55e678a319557cda98c8b9fe1"
+                "reference": "218894231c714f13c993b3a81d2c7f038a02f2e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/2653a7a2acc9ecb55e678a319557cda98c8b9fe1.zip",
-                "reference": "2653a7a2acc9ecb55e678a319557cda98c8b9fe1",
+                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/218894231c714f13c993b3a81d2c7f038a02f2e8.zip",
+                "reference": "218894231c714f13c993b3a81d2c7f038a02f2e8",
                 "shasum": ""
             },
             "require": {
+                "inhere/lite-db": "dev-master",
                 "inhere/php-validate": "^2.0",
                 "php": ">=7.0.0",
-                "psr/log": "~1.0",
-                "windwalker/compare": "^3.0",
-                "windwalker/query": "^3.0"
+                "psr/log": "~1.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -590,7 +670,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2017-11-27T01:40:50+00:00"
+            "time": "2017-12-16T11:09:40+00:00"
         },
         {
             "name": "inhere/sroute",
@@ -598,12 +678,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "b376fb000d32a9a802fb16a48366792212acdd7b"
+                "reference": "f6b1225c1133c20a396ec34ee97ca4aa47a9657e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/b376fb000d32a9a802fb16a48366792212acdd7b.zip",
-                "reference": "b376fb000d32a9a802fb16a48366792212acdd7b",
+                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/f6b1225c1133c20a396ec34ee97ca4aa47a9657e.zip",
+                "reference": "f6b1225c1133c20a396ec34ee97ca4aa47a9657e",
                 "shasum": ""
             },
             "require": {
@@ -629,7 +709,7 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "a very lightweight single file of the router.",
+            "description": "a very lightweight and fasted router.",
             "homepage": "https://github.com/inhere/php-srouter",
             "keywords": [
                 "library",
@@ -637,62 +717,7 @@
                 "route",
                 "router"
             ],
-            "time": "2017-12-07T11:50:21+00:00"
-        },
-        {
-            "name": "league/plates",
-            "version": "3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/plates.git",
-                "reference": "b1684b6f127714497a0ef927ce42c0b44b45a8af"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/thephpleague/plates/b1684b6f127714497a0ef927ce42c0b44b45a8af.zip",
-                "reference": "b1684b6f127714497a0ef927ce42c0b44b45a8af",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3 | ^7.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "^1.4",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Plates\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Reinink",
-                    "email": "jonathan@reinink.ca",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
-            "homepage": "http://platesphp.com",
-            "keywords": [
-                "league",
-                "package",
-                "templates",
-                "templating",
-                "views"
-            ],
-            "time": "2016-12-28T00:14:17+00:00"
+            "time": "2017-12-29T06:01:07+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -819,16 +844,16 @@
         },
         {
             "name": "phpfastcache/phpfastcache",
-            "version": "6.0.7",
+            "version": "6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPSocialNetwork/phpfastcache.git",
-                "reference": "0cc9e80f919522d18bbee3f48cc93709a5674b0e"
+                "reference": "606c29476bd21d907dcd535716d66b31aa999538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/PHPSocialNetwork/phpfastcache/0cc9e80f919522d18bbee3f48cc93709a5674b0e.zip",
-                "reference": "0cc9e80f919522d18bbee3f48cc93709a5674b0e",
+                "url": "https://files.phpcomposer.com/files/PHPSocialNetwork/phpfastcache/606c29476bd21d907dcd535716d66b31aa999538.zip",
+                "reference": "606c29476bd21d907dcd535716d66b31aa999538",
                 "shasum": ""
             },
             "require": {
@@ -911,7 +936,7 @@
                 "zend memory cache",
                 "zend server"
             ],
-            "time": "2017-11-10T22:51:56+00:00"
+            "time": "2017-12-15T22:11:25+00:00"
         },
         {
             "name": "psr/cache",
@@ -1155,16 +1180,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.1",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "db25e810fd5e124085e3777257d0cf4ae533d0ea"
+                "reference": "bb3ef65d493a6d57297cad6c560ee04e2a8f5098"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/process/db25e810fd5e124085e3777257d0cf4ae533d0ea.zip",
-                "reference": "db25e810fd5e124085e3777257d0cf4ae533d0ea",
+                "url": "https://files.phpcomposer.com/files/symfony/process/bb3ef65d493a6d57297cad6c560ee04e2a8f5098.zip",
+                "reference": "bb3ef65d493a6d57297cad6c560ee04e2a8f5098",
                 "shasum": ""
             },
             "require": {
@@ -1200,112 +1225,22 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-22T12:18:49+00:00"
-        },
-        {
-            "name": "windwalker/compare",
-            "version": "3.2.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ventoviro/windwalker-compare.git",
-                "reference": "9a16b0b2bd04b4e32468f6a6372a3b60d6c70b0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ventoviro/windwalker-compare/9a16b0b2bd04b4e32468f6a6372a3b60d6c70b0b.zip",
-                "reference": "9a16b0b2bd04b4e32468f6a6372a3b60d6c70b0b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "windwalker/test": "~3.0"
-            },
-            "type": "windwalker-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Windwalker\\Compare\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.0+"
-            ],
-            "description": "Windwalker Compare package",
-            "homepage": "https://github.com/ventoviro/windwalker-compare",
-            "keywords": [
-                "compare",
-                "framework",
-                "windwalker"
-            ],
-            "time": "2017-06-25T15:37:39+00:00"
-        },
-        {
-            "name": "windwalker/query",
-            "version": "3.2.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ventoviro/windwalker-query.git",
-                "reference": "bf8e5422f8f1639a33913272a599bd8a548dd881"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ventoviro/windwalker-query/bf8e5422f8f1639a33913272a599bd8a548dd881.zip",
-                "reference": "bf8e5422f8f1639a33913272a599bd8a548dd881",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "jdorn/sql-formatter": "1.*",
-                "windwalker/database": "~3.0",
-                "windwalker/test": "~3.0"
-            },
-            "type": "windwalker-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Windwalker\\Query\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.0+"
-            ],
-            "description": "Windwalker Query package",
-            "homepage": "https://github.com/ventoviro/windwalker-query",
-            "keywords": [
-                "framework",
-                "query",
-                "windwalker"
-            ],
-            "time": "2017-10-16T08:38:13+00:00"
+            "time": "2017-12-14T19:40:10+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "doctrine/annotations",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f"
+                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/annotations/5beebb01b025c94e93686b7a0ed3edae81fe3e7f.zip",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
+                "url": "https://files.phpcomposer.com/files/doctrine/annotations/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5.zip",
+                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
                 "shasum": ""
             },
             "require": {
@@ -1314,12 +1249,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -1360,7 +1295,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-07-22T10:58:02+00:00"
+            "time": "2017-12-06T07:11:42+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1464,7 +1399,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -1583,6 +1518,8 @@
         "inhere/database": 20,
         "inhere/sroute": 20,
         "inhere/event": 20,
+        "inhere/lite-cache": 20,
+        "inhere/lite-db": 20,
         "inhere/http": 20,
         "inhere/middleware": 20,
         "inhere/micro-framework": 20,

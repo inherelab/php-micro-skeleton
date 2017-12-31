@@ -9,3 +9,4 @@ tmp/*
 *.pid
 *.tar
 web/docs/
+.DS_Store

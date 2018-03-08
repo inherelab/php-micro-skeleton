@@ -28,10 +28,14 @@
     "inhere/micro-framework": "dev-master",
     "inhere/simple-active-record": "dev-master",
     "inhere/server": "dev-master",
+    "swoole-libs/http-server": "dev-master",
+    "swoole-libs/context": "dev-master",
+    "swoole-libs/websocket": "dev-master",
     "monolog/monolog": "^1.2",
     "overtrue/pinyin": "^3.0",
     "phpfastcache/phpfastcache": "^6.0",
-    "symfony/process": "^3.3"
+    "symfony/process": "^3.3",
+    "mylib/file-utils": "^1.0"
   },
   "require-dev": {
     "inhere/simple-print-tool": "dev-master",

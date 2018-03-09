@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c99b9164ae9339025d60d7c4161106e3",
+    "content-hash": "5c82c46cda8b075e5dc2c24702fc8b18",
     "packages": [
         {
             "name": "guzzlehttp/promises",
@@ -1034,25 +1034,25 @@
         },
         {
             "name": "mylib/file-parse",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-mylib/file-parse.git",
-                "reference": "6758a6351d778ebad99d5ae5452ec96490be7b87"
+                "reference": "8b2655037ee5e1234601bc8856b3ff4905552b05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/file-parse/6758a6351d778ebad99d5ae5452ec96490be7b87.zip",
-                "reference": "6758a6351d778ebad99d5ae5452ec96490be7b87",
+                "url": "https://files.phpcomposer.com/files/php-mylib/file-parse/8b2655037ee5e1234601bc8856b3ff4905552b05.zip",
+                "reference": "8b2655037ee5e1234601bc8856b3ff4905552b05",
                 "shasum": ""
             },
             "require": {
+                "mylib/str-utils": "~1.0",
                 "php": ">=7.0.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
+                "inhere/php-validate": "Very lightweight data validate tool"
             },
             "type": "library",
             "autoload": {
@@ -1078,7 +1078,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-02-01T15:49:55+00:00"
+            "time": "2018-03-08T13:25:02+00:00"
         },
         {
             "name": "mylib/file-utils",
@@ -1851,6 +1851,204 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
+            "name": "swoole-libs/context",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoole-libs/context.git",
+                "reference": "a8c02d2ccf0eae524cc1e665f2d0ae21bd9d82ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/context/a8c02d2ccf0eae524cc1e665f2d0ae21bd9d82ac.zip",
+                "reference": "a8c02d2ccf0eae524cc1e665f2d0ae21bd9d82ac",
+                "shasum": ""
+            },
+            "require": {
+                "inhere/http": "^1.0.0",
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SwooleLib\\Context\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some context tool library of the swoole",
+            "homepage": "https://github.com/swoole-libs/task",
+            "keywords": [
+                "library",
+                "php",
+                "tool"
+            ],
+            "time": "2018-02-09T09:20:33+00:00"
+        },
+        {
+            "name": "swoole-libs/http-server",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoole-libs/http-server.git",
+                "reference": "989145f89da6823492e83e08dcd49f36fe15112a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/http-server/989145f89da6823492e83e08dcd49f36fe15112a.zip",
+                "reference": "989145f89da6823492e83e08dcd49f36fe15112a",
+                "shasum": ""
+            },
+            "require": {
+                "inhere/http": "^1.0",
+                "php": ">7.0.0",
+                "swoole-libs/context": "~1.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SwooleLib\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some http server tool library of the swoole",
+            "homepage": "https://github.com/swoole-libs/http-server",
+            "keywords": [
+                "library",
+                "php",
+                "tool"
+            ],
+            "time": "2018-03-08T14:57:47+00:00"
+        },
+        {
+            "name": "swoole-libs/utils",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoole-libs/utils.git",
+                "reference": "4b48ca05237df755ccedd73acfa18e34d5b045a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/utils/4b48ca05237df755ccedd73acfa18e34d5b045a8.zip",
+                "reference": "4b48ca05237df755ccedd73acfa18e34d5b045a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SwooleLib\\Util\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some utils tool library of the swoole",
+            "homepage": "https://github.com/swoole-libs/utils",
+            "keywords": [
+                "library",
+                "php",
+                "tool"
+            ],
+            "time": "2018-02-07T14:49:00+00:00"
+        },
+        {
+            "name": "swoole-libs/websocket",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoole-libs/websocket.git",
+                "reference": "522e4786425520c8867f61d1154d2687828924f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/websocket/522e4786425520c8867f61d1154d2687828924f2.zip",
+                "reference": "522e4786425520c8867f61d1154d2687828924f2",
+                "shasum": ""
+            },
+            "require": {
+                "inhere/http": "~1.0",
+                "inhere/server": "dev-master",
+                "php": ">=7.0.0",
+                "swoole-libs/context": "^1.0",
+                "swoole-libs/utils": "^1.0"
+            },
+            "suggest": {
+                "ext-swoole": "The swoole extension is required for running"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SwooleLib\\WebSocket\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a php websocket manager powered by swoole",
+            "homepage": "https://github.com/inhere/swoole-libs/websocket",
+            "keywords": [
+                "http",
+                "library",
+                "server",
+                "swoole",
+                "tcp",
+                "udp",
+                "websocket"
+            ],
+            "time": "2018-03-08T15:00:39+00:00"
+        },
+        {
             "name": "symfony/process",
             "version": "v3.4.6",
             "source": {
@@ -2194,6 +2392,8 @@
         "inhere/micro-framework": 20,
         "inhere/simple-active-record": 20,
         "inhere/server": 20,
+        "swoole-libs/http-server": 20,
+        "swoole-libs/websocket": 20,
         "inhere/simple-print-tool": 20
     },
     "prefer-stable": false,

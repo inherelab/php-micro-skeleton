@@ -32,12 +32,4 @@ class DevController extends Controller
     {
         return $this->app->runAction(ServerController::getName(), 'dev', true);
     }
-
-    /**
-     * pack the application to a phar file
-     */
-    public function packCommand()
-    {
-
-    }
 }

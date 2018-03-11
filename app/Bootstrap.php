@@ -131,7 +131,7 @@ class Bootstrap
         $em->attach('app', new AppListener());
 
         $app = new WebApp($di);
-        $app->setEventManager($em);
+        //$app->setEventManager($em);
 
         return $app;
     }
@@ -161,7 +161,7 @@ class Bootstrap
         // save to DI
         // $di->set('app', $app);
 
-        $app->setEventManager($em);
+        //$app->setEventManager($em);
 
         return $app;
     }

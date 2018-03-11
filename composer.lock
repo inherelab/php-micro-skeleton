@@ -112,12 +112,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "e54f4b049566d92e296926b78324560eeedde1c2"
+                "reference": "fbaabed4caebe0698a4dbfc9b8791ee93268728a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-console/e54f4b049566d92e296926b78324560eeedde1c2.zip",
-                "reference": "e54f4b049566d92e296926b78324560eeedde1c2",
+                "url": "https://files.phpcomposer.com/files/inhere/php-console/fbaabed4caebe0698a4dbfc9b8791ee93268728a.zip",
+                "reference": "fbaabed4caebe0698a4dbfc9b8791ee93268728a",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
                 "console-color",
                 "library"
             ],
-            "time": "2018-02-27T09:49:17+00:00"
+            "time": "2018-03-09T10:14:26+00:00"
         },
         {
             "name": "inhere/database",
@@ -559,16 +559,16 @@
         },
         {
             "name": "inhere/php-validate",
-            "version": "v2.4.7",
+            "version": "v2.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "0232052ca166a88f02c7a686e4955a303f3c5cc3"
+                "reference": "669e4d7f6f6f22f0500b90ff76789cc47f4a6aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-validate/0232052ca166a88f02c7a686e4955a303f3c5cc3.zip",
-                "reference": "0232052ca166a88f02c7a686e4955a303f3c5cc3",
+                "url": "https://files.phpcomposer.com/files/inhere/php-validate/669e4d7f6f6f22f0500b90ff76789cc47f4a6aeb.zip",
+                "reference": "669e4d7f6f6f22f0500b90ff76789cc47f4a6aeb",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +600,7 @@
                 "library",
                 "validate"
             ],
-            "time": "2018-01-13T05:29:47+00:00"
+            "time": "2018-03-09T17:09:23+00:00"
         },
         {
             "name": "inhere/server",
@@ -608,22 +608,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "a27e6c52d65b853a16b04f2a5c78fee8829ed2cc"
+                "reference": "886964972adb312c4b47f85383f5e6e7bc70a4f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-server/a27e6c52d65b853a16b04f2a5c78fee8829ed2cc.zip",
-                "reference": "a27e6c52d65b853a16b04f2a5c78fee8829ed2cc",
+                "url": "https://files.phpcomposer.com/files/inhere/php-server/886964972adb312c4b47f85383f5e6e7bc70a4f1.zip",
+                "reference": "886964972adb312c4b47f85383f5e6e7bc70a4f1",
                 "shasum": ""
             },
             "require": {
                 "inhere/console": "dev-master",
-                "inhere/library": "dev-master",
-                "php": ">=7.0.0"
+                "php": ">7.0.0",
+                "swoole-libs/utils": "~1.0"
             },
             "suggest": {
-                "ext-swoole": "The swoole extension is required for running",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
+                "ext-swoole": "The swoole extension is required for running"
             },
             "type": "library",
             "autoload": {
@@ -656,7 +655,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-02-03T13:24:40+00:00"
+            "time": "2018-03-09T01:53:40+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -985,20 +984,21 @@
         },
         {
             "name": "mylib/errors",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-mylib/errors.git",
-                "reference": "4fa9d9e22b75e1bfa6f4d3d094617d14511ccefa"
+                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/errors/4fa9d9e22b75e1bfa6f4d3d094617d14511ccefa.zip",
-                "reference": "4fa9d9e22b75e1bfa6f4d3d094617d14511ccefa",
+                "url": "https://files.phpcomposer.com/files/php-mylib/errors/833845664332db9eed1cc4d322039a8f2fc68d8c.zip",
+                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c",
                 "shasum": ""
             },
             "require": {
-                "mylib/php-utils": "^1.0.0",
+                "mylib/obj-utils": "^1.0",
+                "mylib/php-utils": "^1.0",
                 "php": ">=7.0.0"
             },
             "suggest": {
@@ -1030,7 +1030,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-02-08T11:18:24+00:00"
+            "time": "2018-03-09T03:51:36+00:00"
         },
         {
             "name": "mylib/file-parse",
@@ -1178,16 +1178,16 @@
         },
         {
             "name": "mylib/php-utils",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-mylib/php-utils.git",
-                "reference": "ecf15fd3916b0e2e356a8ae609851a3add1df1ef"
+                "reference": "3e0e24a5576639d03f9d403be05ee7167eae9395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/php-utils/ecf15fd3916b0e2e356a8ae609851a3add1df1ef.zip",
-                "reference": "ecf15fd3916b0e2e356a8ae609851a3add1df1ef",
+                "url": "https://files.phpcomposer.com/files/php-mylib/php-utils/3e0e24a5576639d03f9d403be05ee7167eae9395.zip",
+                "reference": "3e0e24a5576639d03f9d403be05ee7167eae9395",
                 "shasum": ""
             },
             "require": {
@@ -1221,7 +1221,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-03-08T03:01:36+00:00"
+            "time": "2018-03-09T03:42:13+00:00"
         },
         {
             "name": "mylib/str-utils",
@@ -1904,16 +1904,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-libs/http-server.git",
-                "reference": "989145f89da6823492e83e08dcd49f36fe15112a"
+                "reference": "fad4de7ce987a336e7178dea7ac401c746191793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/http-server/989145f89da6823492e83e08dcd49f36fe15112a.zip",
-                "reference": "989145f89da6823492e83e08dcd49f36fe15112a",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/http-server/fad4de7ce987a336e7178dea7ac401c746191793.zip",
+                "reference": "fad4de7ce987a336e7178dea7ac401c746191793",
                 "shasum": ""
             },
             "require": {
                 "inhere/http": "^1.0",
+                "inhere/server": "dev-master",
                 "php": ">7.0.0",
                 "swoole-libs/context": "~1.0"
             },
@@ -1945,23 +1946,25 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-03-08T14:57:47+00:00"
+            "time": "2018-03-09T10:20:41+00:00"
         },
         {
             "name": "swoole-libs/utils",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-libs/utils.git",
-                "reference": "4b48ca05237df755ccedd73acfa18e34d5b045a8"
+                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/utils/4b48ca05237df755ccedd73acfa18e34d5b045a8.zip",
-                "reference": "4b48ca05237df755ccedd73acfa18e34d5b045a8",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/utils/dd0f095cafc0f88608fcf33046d57d2e66f38ae1.zip",
+                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1",
                 "shasum": ""
             },
             "require": {
+                "mylib/php-utils": "~1.0",
+                "mylib/sys-utils": "~1.0",
                 "php": ">=7.0.0"
             },
             "suggest": {
@@ -1992,7 +1995,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-02-07T14:49:00+00:00"
+            "time": "2018-03-09T01:31:34+00:00"
         },
         {
             "name": "swoole-libs/websocket",
@@ -2000,12 +2003,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-libs/websocket.git",
-                "reference": "522e4786425520c8867f61d1154d2687828924f2"
+                "reference": "c5f4c1f3680f3f872d4e9f60d99651790547a982"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/websocket/522e4786425520c8867f61d1154d2687828924f2.zip",
-                "reference": "522e4786425520c8867f61d1154d2687828924f2",
+                "url": "https://files.phpcomposer.com/files/swoole-libs/websocket/c5f4c1f3680f3f872d4e9f60d99651790547a982.zip",
+                "reference": "c5f4c1f3680f3f872d4e9f60d99651790547a982",
                 "shasum": ""
             },
             "require": {
@@ -2046,7 +2049,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-03-08T15:00:39+00:00"
+            "time": "2018-03-09T10:20:00+00:00"
         },
         {
             "name": "symfony/process",

@@ -6,7 +6,7 @@
  * Time: 下午11:53
  */
 
-namespace App\Providers;
+namespace App\Provider;
 
 use App\Listeners\MysqlListener;
 use Inhere\Event\EventManager;

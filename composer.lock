@@ -112,12 +112,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "fbaabed4caebe0698a4dbfc9b8791ee93268728a"
+                "reference": "2b61a61ec887d50ec7c170e8f695a608a2499684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-console/fbaabed4caebe0698a4dbfc9b8791ee93268728a.zip",
-                "reference": "fbaabed4caebe0698a4dbfc9b8791ee93268728a",
+                "url": "https://files.phpcomposer.com/files/inhere/php-console/2b61a61ec887d50ec7c170e8f695a608a2499684.zip",
+                "reference": "2b61a61ec887d50ec7c170e8f695a608a2499684",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
                 "console-color",
                 "library"
             ],
-            "time": "2018-03-09T10:14:26+00:00"
+            "time": "2018-03-16T05:29:00+00:00"
         },
         {
             "name": "inhere/database",
@@ -453,7 +453,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework",
-                "reference": "552ae77317ba7bdcdc014c7d2e470791e3d48e1c"
+                "reference": "ad09e1a994d90766037280c9a281243be0f6fa93"
             },
             "require": {
                 "inhere/console": "dev-master",
@@ -467,6 +467,7 @@
                 "mylib/collection": "~1.0",
                 "mylib/di": "~1.0",
                 "mylib/errors": "~1.0",
+                "mylib/file-utils": "~1.0",
                 "mylib/obj-utils": "~1.0",
                 "mylib/php-utils": "~1.0",
                 "mylib/str-utils": "~1.0",
@@ -504,7 +505,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-03-08T03:46:47+00:00"
+            "time": "2018-03-20T06:55:20+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -559,16 +560,16 @@
         },
         {
             "name": "inhere/php-validate",
-            "version": "v2.4.8",
+            "version": "v2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "669e4d7f6f6f22f0500b90ff76789cc47f4a6aeb"
+                "reference": "2e70c3ea20d9404b650dc9697eafa91bfeb08435"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-validate/669e4d7f6f6f22f0500b90ff76789cc47f4a6aeb.zip",
-                "reference": "669e4d7f6f6f22f0500b90ff76789cc47f4a6aeb",
+                "url": "https://files.phpcomposer.com/files/inhere/php-validate/2e70c3ea20d9404b650dc9697eafa91bfeb08435.zip",
+                "reference": "2e70c3ea20d9404b650dc9697eafa91bfeb08435",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +601,7 @@
                 "library",
                 "validate"
             ],
-            "time": "2018-03-09T17:09:23+00:00"
+            "time": "2018-03-15T05:34:38+00:00"
         },
         {
             "name": "inhere/server",
@@ -608,12 +609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "886964972adb312c4b47f85383f5e6e7bc70a4f1"
+                "reference": "5e0531fbf64e6e1bffa79dd61d9b22ceb8f52925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-server/886964972adb312c4b47f85383f5e6e7bc70a4f1.zip",
-                "reference": "886964972adb312c4b47f85383f5e6e7bc70a4f1",
+                "url": "https://files.phpcomposer.com/files/inhere/php-server/5e0531fbf64e6e1bffa79dd61d9b22ceb8f52925.zip",
+                "reference": "5e0531fbf64e6e1bffa79dd61d9b22ceb8f52925",
                 "shasum": ""
             },
             "require": {
@@ -655,7 +656,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-03-09T01:53:40+00:00"
+            "time": "2018-03-10T08:30:39+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -717,12 +718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "db770148af76987214cf34c48d516fe81803cf5f"
+                "reference": "3692ce0659295ec76b63efe60617034bfe6c089d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/db770148af76987214cf34c48d516fe81803cf5f.zip",
-                "reference": "db770148af76987214cf34c48d516fe81803cf5f",
+                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/3692ce0659295ec76b63efe60617034bfe6c089d.zip",
+                "reference": "3692ce0659295ec76b63efe60617034bfe6c089d",
                 "shasum": ""
             },
             "require": {
@@ -759,7 +760,7 @@
                 "route",
                 "router"
             ],
-            "time": "2018-03-05T02:07:07+00:00"
+            "time": "2018-03-19T02:01:09+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -841,16 +842,16 @@
         },
         {
             "name": "mylib/arr-utils",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-mylib/arr-utils.git",
-                "reference": "b6eb0035ea533ad5b3b4eb43f9b4d656b1b92514"
+                "reference": "b776952a7a3a960fe5729ec500606e65e89befd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/arr-utils/b6eb0035ea533ad5b3b4eb43f9b4d656b1b92514.zip",
-                "reference": "b6eb0035ea533ad5b3b4eb43f9b4d656b1b92514",
+                "url": "https://files.phpcomposer.com/files/php-mylib/arr-utils/b776952a7a3a960fe5729ec500606e65e89befd0.zip",
+                "reference": "b776952a7a3a960fe5729ec500606e65e89befd0",
                 "shasum": ""
             },
             "require": {
@@ -885,7 +886,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-01-30T05:17:36+00:00"
+            "time": "2018-03-15T01:28:16+00:00"
         },
         {
             "name": "mylib/collection",

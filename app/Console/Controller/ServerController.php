@@ -6,13 +6,14 @@
  * Time: 9:44
  */
 
-namespace App\Console\Controllers;
+namespace App\Console\Controller;
 
 use Inhere\Console\Controller;
 use Mco\Web\AppServer;
 
 /**
- * ServerController
+ * Class ServerController
+ * @package App\Console\Controller
  */
 class ServerController extends Controller
 {

@@ -6,12 +6,13 @@
  * Time: 18:58
  */
 
-namespace App\Console\Controllers;
+namespace App\Console\Controller;
 
 use Inhere\Console\Controller;
 
 /**
- * default command controller
+ * Class DevController
+ * @package App\Console\Controller
  */
 class DevController extends Controller
 {

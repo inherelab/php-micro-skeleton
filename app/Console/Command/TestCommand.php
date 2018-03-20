@@ -6,14 +6,14 @@
  * Time: 18:58
  */
 
-namespace App\Console\Commands;
+namespace App\Console\Command;
 
 use Inhere\Console\Command;
 use App\Model\CategoryModel;
 
 /**
  * Class Test
- * @package App\Console\Commands
+ * @package App\Console\Command
  */
 class TestCommand extends Command
 {

@@ -4,7 +4,7 @@
  * this is a short entry for swoole server manage.
  */
 
-use App\Console\Controllers\ServerController;
+use App\Console\Controller\ServerController;
 use Inhere\Console\Application;
 
 define('BASE_PATH', dirname(__DIR__));

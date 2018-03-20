@@ -9,9 +9,9 @@
 namespace App;
 
 use App\Listeners\AppListener;
-use App\Providers\CommonServiceProvider;
-use App\Providers\ConsoleServiceProvider;
-use App\Providers\WebServiceProvider;
+use App\Provider\CommonServiceProvider;
+use App\Provider\ConsoleServiceProvider;
+use App\Provider\WebServiceProvider;
 use Inhere\Library\Components\EnvDetector;
 use \Inhere\Library\DI\Container;
 use Inhere\Library\Components\PhpDotEnv;

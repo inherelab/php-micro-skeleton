@@ -38,6 +38,7 @@
   },
   "require-dev": {
     "inhere/simple-print-tool": "dev-master",
+    "ulue/annotations": "dev-master",
     "zircote/swagger-php": "^2.0"
   },
   "autoload": {

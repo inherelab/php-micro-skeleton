@@ -6,7 +6,7 @@
  * Time: 18:58
  */
 
-namespace App\Http\Controllers;
+namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
 use Mco\Helpers\Respond;

@@ -6,7 +6,7 @@
  * Time: 14:58
  */
 
-namespace App\Http\Controllers;
+namespace App\Http\Controller;
 
 /**
  * Class RestController

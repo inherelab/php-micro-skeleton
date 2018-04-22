@@ -8,7 +8,7 @@
 
 namespace App;
 
-use App\Listeners\AppListener;
+use App\Listener\AppListener;
 use App\Provider\CommonServiceProvider;
 use App\Provider\ConsoleServiceProvider;
 use App\Provider\WebServiceProvider;

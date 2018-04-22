@@ -6,13 +6,13 @@
  * Time: 下午11:03
  */
 
-namespace App\Listeners;
+namespace App\Listener;
 
 use Inhere\Event\EventInterface;
 
 /**
  * Class AppListener
- * @package App\Listeners
+ * @package App\Listener
  */
 class AppListener
 {

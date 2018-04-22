@@ -26,6 +26,7 @@
     "inhere/lite-cache": "dev-master",
     "inhere/lite-db": "dev-master",
     "inhere/micro-framework": "dev-master",
+    "toolkit/toolkit": "dev-master",
     "inhere/simple-active-record": "dev-master",
     "inhere/server": "dev-master",
     "swoole-libs/http-server": "dev-master",

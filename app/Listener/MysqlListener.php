@@ -6,11 +6,11 @@
  * Time: 下午11:28
  */
 
-namespace App\Listeners;
+namespace App\Listener;
 
 /**
  * Class MysqlListener
- * @package App\Listeners
+ * @package App\Listener
  */
 class MysqlListener
 {

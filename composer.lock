@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98baa0d7cd21c7cda78ab966cd1d2a83",
+    "content-hash": "55112914bacbde159f8e63348e01d929",
     "packages": [
         {
             "name": "guzzlehttp/promises",
@@ -720,12 +720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "3dde87e34a2e9423d7fe829f0197f15859107785"
+                "reference": "41e12eac8c3fbe7b75f3e08d3f543396816491d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/3dde87e34a2e9423d7fe829f0197f15859107785.zip",
-                "reference": "3dde87e34a2e9423d7fe829f0197f15859107785",
+                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/41e12eac8c3fbe7b75f3e08d3f543396816491d0.zip",
+                "reference": "41e12eac8c3fbe7b75f3e08d3f543396816491d0",
                 "shasum": ""
             },
             "require": {
@@ -762,7 +762,7 @@
                 "route",
                 "router"
             ],
-            "time": "2018-04-21T15:18:57+00:00"
+            "time": "2018-04-22T15:21:55+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2152,6 +2152,80 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2018-04-03T05:22:50+00:00"
+        },
+        {
+            "name": "toolkit/toolkit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/toolkit.git",
+                "reference": "d6b94bae0b4b53ca5e74762664632fd5d4d941a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/toolkit/d6b94bae0b4b53ca5e74762664632fd5d4d941a1.zip",
+                "reference": "d6b94bae0b4b53ca5e74762664632fd5d4d941a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/container": "^1.0"
+            },
+            "replace": {
+                "toolkit/arr-utils": "self.version",
+                "toolkit/collection": "self.version",
+                "toolkit/data-parser": "self.version",
+                "toolkit/di": "self.version",
+                "toolkit/file-utils": "self.version",
+                "toolkit/obj-utils": "self.version",
+                "toolkit/php-utils": "self.version",
+                "toolkit/str-utils": "self.version",
+                "toolkit/sys-utils": "self.version",
+                "toolkit/utils": "self.version"
+            },
+            "require-dev": {
+                "inhere/console": "dev-master"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool",
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\Dev\\": "libs/dev-helper/",
+                    "Toolkit\\ArrUtil\\": "libs/arr-utils/src/",
+                    "Toolkit\\Collection\\": "libs/collection/src/",
+                    "Toolkit\\DI\\": "libs/di/src/",
+                    "Toolkit\\DataParser\\": "libs/data-parser/src/",
+                    "Toolkit\\FileUtil\\": "libs/file-utils/src/",
+                    "Toolkit\\ObjUtil\\": "libs/obj-utils/src/",
+                    "Toolkit\\PhpUtil\\": "libs/php-utils/src/",
+                    "Toolkit\\StrUtil\\": "libs/str-utils/src/",
+                    "Toolkit\\SysUtil\\": "libs/sys-utils/src/",
+                    "Toolkit\\Util\\": "libs/utils/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some useful library of the php",
+            "homepage": "https://github.com/php-toolkit/toolkit",
+            "keywords": [
+                "library",
+                "php",
+                "tools"
+            ],
+            "time": "2018-04-22T07:15:34+00:00"
         }
     ],
     "packages-dev": [
@@ -2488,6 +2562,7 @@
         "inhere/lite-cache": 20,
         "inhere/lite-db": 20,
         "inhere/micro-framework": 20,
+        "toolkit/toolkit": 20,
         "inhere/simple-active-record": 20,
         "inhere/server": 20,
         "swoole-libs/http-server": 20,

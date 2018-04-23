@@ -8,7 +8,7 @@
  * @var Mco\Console\App $app
  */
 
-$app->registerCommands('App\\Console\\Commands', get_path('app/Console/Commands'));
-$app->registerGroups('App\\Console\\Controllers', get_path('app/Console/Controllers'));
+$app->registerCommands('App\\Console\\Command', get_path('app/Console/Command'));
+$app->registerGroups('App\\Console\\Controller', get_path('app/Console/Controller'));
 
 $app->addController(\Inhere\Console\BuiltIn\PharController::class);

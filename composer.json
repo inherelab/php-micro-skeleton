@@ -30,7 +30,7 @@
     "inhere/server": "dev-master",
     "swoole-kit/http-server": "dev-master",
     "swoole-kit/websocket-server": "dev-master",
-    "toolkit/toolkit": "dev-master",
+    "toolkit/toolkit": "dev-master as 1.0",
     "toolkit/toolkit-plus": "dev-master",
     "monolog/monolog": "^1.2",
     "overtrue/pinyin": "^3.0",

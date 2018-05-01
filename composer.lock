@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3195adbc72382560b1b80f1a95c1241",
+    "content-hash": "b9d61b1fd9cbc15e89ae3ae4b20f143b",
     "packages": [
         {
             "name": "guzzlehttp/promises",
@@ -359,18 +359,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-lite-cache.git",
-                "reference": "dd48dda11ed15ea186cb94798a9d08567dc8cb25"
+                "reference": "74548c7aabc82490a9e693cba4e1089a50f80735"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-lite-cache/dd48dda11ed15ea186cb94798a9d08567dc8cb25.zip",
-                "reference": "dd48dda11ed15ea186cb94798a9d08567dc8cb25",
+                "url": "https://files.phpcomposer.com/files/inhere/php-lite-cache/74548c7aabc82490a9e693cba4e1089a50f80735.zip",
+                "reference": "74548c7aabc82490a9e693cba4e1089a50f80735",
                 "shasum": ""
             },
             "require": {
-                "mylib/data-parser": "^1.0",
                 "php": ">=7.0.0",
-                "psr/simple-cache": "^1.0"
+                "psr/simple-cache": "^1.0",
+                "toolkit/data-parser": "^1.0"
             },
             "suggest": {
                 "inhere/simple-print-tool": "Very lightweight data printing tools"
@@ -399,7 +399,7 @@
                 "memcache",
                 "redis"
             ],
-            "time": "2018-03-30T16:12:07+00:00"
+            "time": "2018-05-01T11:48:42+00:00"
         },
         {
             "name": "inhere/lite-db",
@@ -454,7 +454,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework",
-                "reference": "412d431a5508170f1f1004877a36a954b3a2003e"
+                "reference": "c53a5b4c072cddfb52f11b94b81df6650d73f020"
             },
             "require": {
                 "inhere/console": "dev-master",
@@ -499,7 +499,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-05-01T06:26:20+00:00"
+            "time": "2018-05-01T11:42:09+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -603,18 +603,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "559fd4f59a6747078b0681ffbb505f0470629f0e"
+                "reference": "91743a1fe68c7b4b10c63f13743f494fef764434"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-server/559fd4f59a6747078b0681ffbb505f0470629f0e.zip",
-                "reference": "559fd4f59a6747078b0681ffbb505f0470629f0e",
+                "url": "https://files.phpcomposer.com/files/inhere/php-server/91743a1fe68c7b4b10c63f13743f494fef764434.zip",
+                "reference": "91743a1fe68c7b4b10c63f13743f494fef764434",
                 "shasum": ""
             },
             "require": {
                 "inhere/console": "dev-master",
                 "php": ">7.0.0",
-                "swoole-libs/utils": "~1.0"
+                "swoole-kit/utils": "~1.0"
             },
             "suggest": {
                 "ext-swoole": "The swoole extension is required for running"
@@ -650,7 +650,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-04-30T17:24:16+00:00"
+            "time": "2018-05-01T12:05:26+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -658,20 +658,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-simple-activeRecord.git",
-                "reference": "1553196f57c79f60c413510b5cc15e8885d9ae99"
+                "reference": "7bd1132821cbdc141821b266ecd92cc18fb04f26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/1553196f57c79f60c413510b5cc15e8885d9ae99.zip",
-                "reference": "1553196f57c79f60c413510b5cc15e8885d9ae99",
+                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/7bd1132821cbdc141821b266ecd92cc18fb04f26.zip",
+                "reference": "7bd1132821cbdc141821b266ecd92cc18fb04f26",
                 "shasum": ""
             },
             "require": {
                 "inhere/lite-db": "dev-master",
                 "inhere/php-validate": "^2.0",
-                "mylib/collection": "~1.0",
                 "php": ">=7.0.0",
-                "psr/log": "~1.0"
+                "psr/log": "~1.0",
+                "toolkit/collection": "~1.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -705,7 +705,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-03-31T06:27:35+00:00"
+            "time": "2018-05-01T11:54:51+00:00"
         },
         {
             "name": "inhere/sroute",
@@ -834,388 +834,6 @@
                 "psr-3"
             ],
             "time": "2017-06-19T01:22:40+00:00"
-        },
-        {
-            "name": "mylib/arr-utils",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/arr-utils.git",
-                "reference": "b776952a7a3a960fe5729ec500606e65e89befd0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/arr-utils/b776952a7a3a960fe5729ec500606e65e89befd0.zip",
-                "reference": "b776952a7a3a960fe5729ec500606e65e89befd0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\ArrUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some array tool library of the php",
-            "homepage": "https://github.com/php-mylib/arr-utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-15T01:28:16+00:00"
-        },
-        {
-            "name": "mylib/collection",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/collection.git",
-                "reference": "e93e999797ccb7b61c5a4d35440c9b943400237a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/collection/e93e999797ccb7b61c5a4d35440c9b943400237a.zip",
-                "reference": "e93e999797ccb7b61c5a4d35440c9b943400237a",
-                "shasum": ""
-            },
-            "require": {
-                "mylib/arr-utils": "~1.0",
-                "mylib/file-parse": "~1.0",
-                "mylib/obj-utils": "~1.0",
-                "mylib/str-utils": "~1.0",
-                "php": ">7.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\Collection\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some data collection tool library of the php",
-            "homepage": "https://github.com/php-mylib/collection",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-08T11:01:28+00:00"
-        },
-        {
-            "name": "mylib/data-parser",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/data-parser.git",
-                "reference": "ad15c6f4080a3e0311cf670987514f404a24f59d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/data-parser/ad15c6f4080a3e0311cf670987514f404a24f59d.zip",
-                "reference": "ad15c6f4080a3e0311cf670987514f404a24f59d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\DataParser\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some data parser tool library of the php",
-            "homepage": "https://github.com/php-mylib/data-parser",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-29T11:24:57+00:00"
-        },
-        {
-            "name": "mylib/file-parse",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/file-parse.git",
-                "reference": "8b2655037ee5e1234601bc8856b3ff4905552b05"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/file-parse/8b2655037ee5e1234601bc8856b3ff4905552b05.zip",
-                "reference": "8b2655037ee5e1234601bc8856b3ff4905552b05",
-                "shasum": ""
-            },
-            "require": {
-                "mylib/str-utils": "~1.0",
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\FileParse\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some file parse tool library of the php",
-            "homepage": "https://github.com/php-mylib/file-parse",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-08T13:25:02+00:00"
-        },
-        {
-            "name": "mylib/obj-utils",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/obj-utils.git",
-                "reference": "9b4e4a6bfee2f96d5fb3a5704db7c25f7f7a6e5e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/obj-utils/9b4e4a6bfee2f96d5fb3a5704db7c25f7f7a6e5e.zip",
-                "reference": "9b4e4a6bfee2f96d5fb3a5704db7c25f7f7a6e5e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\ObjUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some object tool library of the php",
-            "homepage": "https://github.com/php-mylib/obj-utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-01-30T07:03:44+00:00"
-        },
-        {
-            "name": "mylib/php-utils",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/php-utils.git",
-                "reference": "3e0e24a5576639d03f9d403be05ee7167eae9395"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/php-utils/3e0e24a5576639d03f9d403be05ee7167eae9395.zip",
-                "reference": "3e0e24a5576639d03f9d403be05ee7167eae9395",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\PhpUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some php tool library of the php",
-            "homepage": "https://github.com/php-mylib/php-utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-09T03:42:13+00:00"
-        },
-        {
-            "name": "mylib/str-utils",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/str-utils.git",
-                "reference": "8d3a08f7f8361462ea5d864d73ca8a8aea47f7e9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/str-utils/8d3a08f7f8361462ea5d864d73ca8a8aea47f7e9.zip",
-                "reference": "8d3a08f7f8361462ea5d864d73ca8a8aea47f7e9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\StrUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some string tool library of the php",
-            "homepage": "https://github.com/php-mylib/str-utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-07T15:31:47+00:00"
-        },
-        {
-            "name": "mylib/sys-utils",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/sys-utils.git",
-                "reference": "54327e5a04fe784a3652d6931fb756c8cda0ef6a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/sys-utils/54327e5a04fe784a3652d6931fb756c8cda0ef6a.zip",
-                "reference": "54327e5a04fe784a3652d6931fb756c8cda0ef6a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\SysUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some system tool library of the php",
-            "homepage": "https://github.com/php-mylib/sys-utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-02-08T11:33:18+00:00"
         },
         {
             "name": "overtrue/pinyin",
@@ -1804,22 +1422,22 @@
         },
         {
             "name": "swoole-kit/utils",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-kit/utils.git",
-                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1"
+                "reference": "30867560d66283d46cca7314d00d9459c6a9b119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-kit/utils/dd0f095cafc0f88608fcf33046d57d2e66f38ae1.zip",
-                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1",
+                "url": "https://files.phpcomposer.com/files/swoole-kit/utils/30867560d66283d46cca7314d00d9459c6a9b119.zip",
+                "reference": "30867560d66283d46cca7314d00d9459c6a9b119",
                 "shasum": ""
             },
             "require": {
-                "mylib/php-utils": "~1.0",
-                "mylib/sys-utils": "~1.0",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "toolkit/php-utils": "~1.0",
+                "toolkit/sys-utils": "~1.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -1828,7 +1446,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "SwooleLib\\Util\\": "src/"
+                    "SwooleKit\\Util\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1843,13 +1461,13 @@
                 }
             ],
             "description": "some utils tool library of the swoole",
-            "homepage": "https://github.com/swoole-libs/utils",
+            "homepage": "https://github.com/swoole-kit/utils",
             "keywords": [
                 "library",
                 "php",
                 "tool"
             ],
-            "time": "2018-03-09T01:31:34+00:00"
+            "time": "2018-04-30T15:20:14+00:00"
         },
         {
             "name": "swoole-kit/websocket-server",
@@ -1906,55 +1524,6 @@
             "time": "2018-04-30T15:56:22+00:00"
         },
         {
-            "name": "swoole-libs/utils",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swoole-libs/utils.git",
-                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/utils/dd0f095cafc0f88608fcf33046d57d2e66f38ae1.zip",
-                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1",
-                "shasum": ""
-            },
-            "require": {
-                "mylib/php-utils": "~1.0",
-                "mylib/sys-utils": "~1.0",
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SwooleLib\\Util\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some utils tool library of the swoole",
-            "homepage": "https://github.com/swoole-libs/utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-09T01:31:34+00:00"
-        },
-        {
             "name": "symfony/process",
             "version": "v3.4.9",
             "source": {
@@ -2005,22 +1574,22 @@
         },
         {
             "name": "toolkit/errors",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/errors.git",
-                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c"
+                "reference": "e9e1bf683f6226dcdee70a80379a4353874218eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-toolkit/errors/833845664332db9eed1cc4d322039a8f2fc68d8c.zip",
-                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/errors/e9e1bf683f6226dcdee70a80379a4353874218eb.zip",
+                "reference": "e9e1bf683f6226dcdee70a80379a4353874218eb",
                 "shasum": ""
             },
             "require": {
-                "mylib/obj-utils": "^1.0",
-                "mylib/php-utils": "^1.0",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "toolkit/obj-utils": "^1.0",
+                "toolkit/php-utils": "^1.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -2030,7 +1599,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "MyLib\\Error\\": "src/"
+                    "Toolkit\\Error\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2045,13 +1614,13 @@
                 }
             ],
             "description": "some simple errors tool library of the php",
-            "homepage": "https://github.com/php-mylib/errors",
+            "homepage": "https://github.com/php-toolkit/errors",
             "keywords": [
                 "library",
                 "php",
                 "tool"
             ],
-            "time": "2018-03-09T03:51:36+00:00"
+            "time": "2018-05-01T05:35:26+00:00"
         },
         {
             "name": "toolkit/toolkit",
@@ -2545,7 +2114,14 @@
             "time": "2017-12-01T09:22:05+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.0",
+            "alias_normalized": "1.0.0.0",
+            "version": "9999999-dev",
+            "package": "toolkit/toolkit"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "inhere/asset-manager": 20,

@@ -8,9 +8,9 @@
 
 namespace App\Provider;
 
-use Inhere\Library\Collections\Configuration;
-use Inhere\Library\DI\Container;
-use Inhere\Library\DI\ServiceProviderInterface;
+use Toolkit\Collection\Configuration;
+use Toolkit\DI\Container;
+use Toolkit\DI\ServiceProviderInterface;
 
 /**
  * Class ConsoleServiceProvider

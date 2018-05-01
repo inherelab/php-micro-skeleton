@@ -3,7 +3,6 @@
  * the common config
  */
 
-use Inhere\Library\Components\Language;
 // use Overtrue\Pinyin\MemoryFileDictLoader;
 use Inhere\Library\Utils\LiteLogger;
 use Overtrue\Pinyin\Pinyin;
@@ -17,6 +16,15 @@ return [
     'rootPath' => BASE_PATH,
 
     'enableCsrfToken' => true,
+
+    'language'   => [
+        'lang'      => 'zh-CN',
+        'langs'     => ['en', 'zh-CN'],
+        'basePath'  => dirname(__DIR__).'/res/languages',
+        'langFiles' => [
+            'response.php',
+        ],
+    ],
 
     'services' => [
         /**
@@ -32,15 +40,6 @@ return [
             'splitType'    => 1,
             'bufferSize'   => 1000, // 1000,
             'pathResolver' => 'alias_path',
-        ],
-        'lang'   => [
-            'target'    => Language::class,
-            'lang'      => 'zh-CN',
-            'langs'     => ['en', 'zh-CN'],
-            'basePath'  => dirname(__DIR__).'/res/languages',
-            'langFiles' => [
-                'response.php',
-            ],
         ],
         'pinyin' => [
             'target' => Pinyin::class,

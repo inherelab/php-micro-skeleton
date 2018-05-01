@@ -1,7 +1,5 @@
 <?php
 
-use Inhere\Library\Components\Language;
-
 function app($id = null)
 {
     if ($id) {
@@ -37,7 +35,7 @@ function container($name = null)
  */
 function tl($key, array $args = [], $lang = null)
 {
-    /** @see Language::translate() */
+    /** @see \Toolkit\Collection\Language::translate() */
     return \Mco::$di->get('lang')->translate($key, $args, $lang);
 }
 

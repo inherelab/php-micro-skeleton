@@ -12,9 +12,9 @@ use App\Listener\AppListener;
 use App\Provider\CommonServiceProvider;
 use App\Provider\ConsoleServiceProvider;
 use App\Provider\WebServiceProvider;
-use Inhere\Library\Components\EnvDetector;
-use \Inhere\Library\DI\Container;
-use Inhere\Library\Components\PhpDotEnv;
+use Mco\Component\EnvDetector;
+use Toolkit\DI\Container;
+use Toolkit\PhpUtil\PhpDotEnv;
 use Mco\Web\App as WebApp;
 use Mco\Console\App as CliApp;
 

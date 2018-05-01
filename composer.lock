@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "55112914bacbde159f8e63348e01d929",
+    "content-hash": "e3195adbc72382560b1b80f1a95c1241",
     "packages": [
         {
             "name": "guzzlehttp/promises",
@@ -454,7 +454,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework",
-                "reference": "819eaac916872fca2984b82905d9958140e47a59"
+                "reference": "412d431a5508170f1f1004877a36a954b3a2003e"
             },
             "require": {
                 "inhere/console": "dev-master",
@@ -464,9 +464,10 @@
                 "inhere/php-validate": "~2.0",
                 "inhere/sroute": "dev-master",
                 "monolog/monolog": "^1.2",
-                "mylib/errors": "~1.0",
-                "mylib/web-utils": "~1.0",
-                "php": ">7.0.0"
+                "php": ">7.0.0",
+                "toolkit/errors": "~1.0",
+                "toolkit/toolkit": "dev-master",
+                "toolkit/web-utils": "~1.0"
             },
             "type": "framework",
             "autoload": {
@@ -498,7 +499,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-04-23T04:03:02+00:00"
+            "time": "2018-05-01T06:26:20+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -602,12 +603,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "5e0531fbf64e6e1bffa79dd61d9b22ceb8f52925"
+                "reference": "559fd4f59a6747078b0681ffbb505f0470629f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-server/5e0531fbf64e6e1bffa79dd61d9b22ceb8f52925.zip",
-                "reference": "5e0531fbf64e6e1bffa79dd61d9b22ceb8f52925",
+                "url": "https://files.phpcomposer.com/files/inhere/php-server/559fd4f59a6747078b0681ffbb505f0470629f0e.zip",
+                "reference": "559fd4f59a6747078b0681ffbb505f0470629f0e",
                 "shasum": ""
             },
             "require": {
@@ -649,7 +650,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-03-10T08:30:39+00:00"
+            "time": "2018-04-30T17:24:16+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -978,56 +979,6 @@
             "time": "2018-03-29T11:24:57+00:00"
         },
         {
-            "name": "mylib/errors",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/errors.git",
-                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/errors/833845664332db9eed1cc4d322039a8f2fc68d8c.zip",
-                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c",
-                "shasum": ""
-            },
-            "require": {
-                "mylib/obj-utils": "^1.0",
-                "mylib/php-utils": "^1.0",
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\Error\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some simple errors tool library of the php",
-            "homepage": "https://github.com/php-mylib/errors",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-09T03:51:36+00:00"
-        },
-        {
             "name": "mylib/file-parse",
             "version": "v1.0.1",
             "source": {
@@ -1074,54 +1025,6 @@
                 "tool"
             ],
             "time": "2018-03-08T13:25:02+00:00"
-        },
-        {
-            "name": "mylib/file-utils",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/file-utils.git",
-                "reference": "9b5e38cf91da6e6e06bc52026dfe3141c06a3887"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/file-utils/9b5e38cf91da6e6e06bc52026dfe3141c06a3887.zip",
-                "reference": "9b5e38cf91da6e6e06bc52026dfe3141c06a3887",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\FileUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some file tool library of the php",
-            "homepage": "https://github.com/php-mylib/file-utils",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-02-01T15:28:42+00:00"
         },
         {
             "name": "mylib/obj-utils",
@@ -1313,50 +1216,6 @@
                 "tool"
             ],
             "time": "2018-02-08T11:33:18+00:00"
-        },
-        {
-            "name": "mylib/web-utils",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/web-utils.git",
-                "reference": "da18372434291582bb8ee89c92ded2ef2af20dfe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/web-utils/da18372434291582bb8ee89c92ded2ef2af20dfe.zip",
-                "reference": "da18372434291582bb8ee89c92ded2ef2af20dfe",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\Web\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a simple web tool library of the php",
-            "homepage": "https://github.com/php-mylib/web-utils",
-            "keywords": [
-                "library"
-            ],
-            "time": "2018-02-08T11:14:49+00:00"
         },
         {
             "name": "overtrue/pinyin",
@@ -1846,22 +1705,22 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
-            "name": "swoole-libs/context",
-            "version": "v1.0.0",
+            "name": "swoole-kit/context",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/swoole-libs/context.git",
-                "reference": "a8c02d2ccf0eae524cc1e665f2d0ae21bd9d82ac"
+                "url": "https://github.com/swoole-kit/context.git",
+                "reference": "e168e96cac9dcce92953df661c6f74eb083cd8d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/context/a8c02d2ccf0eae524cc1e665f2d0ae21bd9d82ac.zip",
-                "reference": "a8c02d2ccf0eae524cc1e665f2d0ae21bd9d82ac",
+                "url": "https://files.phpcomposer.com/files/swoole-kit/context/e168e96cac9dcce92953df661c6f74eb083cd8d4.zip",
+                "reference": "e168e96cac9dcce92953df661c6f74eb083cd8d4",
                 "shasum": ""
             },
             "require": {
                 "inhere/http": "^1.0.0",
-                "php": ">=7.0.0"
+                "php": ">7.0.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -1870,7 +1729,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "SwooleLib\\Context\\": "src/"
+                    "SwooleKit\\Context\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1885,33 +1744,33 @@
                 }
             ],
             "description": "some context tool library of the swoole",
-            "homepage": "https://github.com/swoole-libs/task",
+            "homepage": "https://github.com/swoole-kit/context",
             "keywords": [
                 "library",
                 "php",
                 "tool"
             ],
-            "time": "2018-02-09T09:20:33+00:00"
+            "time": "2018-04-30T15:40:27+00:00"
         },
         {
-            "name": "swoole-libs/http-server",
+            "name": "swoole-kit/http-server",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/swoole-libs/http-server.git",
-                "reference": "fad4de7ce987a336e7178dea7ac401c746191793"
+                "url": "https://github.com/swoole-kit/http-server.git",
+                "reference": "62a91e85660fda8534ed5254c830c1250f58e13b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/http-server/fad4de7ce987a336e7178dea7ac401c746191793.zip",
-                "reference": "fad4de7ce987a336e7178dea7ac401c746191793",
+                "url": "https://files.phpcomposer.com/files/swoole-kit/http-server/62a91e85660fda8534ed5254c830c1250f58e13b.zip",
+                "reference": "62a91e85660fda8534ed5254c830c1250f58e13b",
                 "shasum": ""
             },
             "require": {
                 "inhere/http": "^1.0",
                 "inhere/server": "dev-master",
                 "php": ">7.0.0",
-                "swoole-libs/context": "~1.0"
+                "swoole-kit/context": "~1.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -1920,7 +1779,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "SwooleLib\\Http\\": "src/"
+                    "SwooleKit\\Http\\Server\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1935,13 +1794,116 @@
                 }
             ],
             "description": "some http server tool library of the swoole",
-            "homepage": "https://github.com/swoole-libs/http-server",
+            "homepage": "https://github.com/swoole-kit/http-server",
             "keywords": [
                 "library",
                 "php",
                 "tool"
             ],
-            "time": "2018-03-09T10:20:41+00:00"
+            "time": "2018-04-30T15:52:25+00:00"
+        },
+        {
+            "name": "swoole-kit/utils",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoole-kit/utils.git",
+                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/swoole-kit/utils/dd0f095cafc0f88608fcf33046d57d2e66f38ae1.zip",
+                "reference": "dd0f095cafc0f88608fcf33046d57d2e66f38ae1",
+                "shasum": ""
+            },
+            "require": {
+                "mylib/php-utils": "~1.0",
+                "mylib/sys-utils": "~1.0",
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SwooleLib\\Util\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some utils tool library of the swoole",
+            "homepage": "https://github.com/swoole-libs/utils",
+            "keywords": [
+                "library",
+                "php",
+                "tool"
+            ],
+            "time": "2018-03-09T01:31:34+00:00"
+        },
+        {
+            "name": "swoole-kit/websocket-server",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoole-kit/websocket-server.git",
+                "reference": "7a890e3ebd84201f588ac7df55e941268507f96b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/swoole-kit/websocket-server/7a890e3ebd84201f588ac7df55e941268507f96b.zip",
+                "reference": "7a890e3ebd84201f588ac7df55e941268507f96b",
+                "shasum": ""
+            },
+            "require": {
+                "inhere/http": "~1.0",
+                "inhere/server": "dev-master",
+                "php": ">=7.0.0",
+                "swoole-kit/context": "^1.0",
+                "swoole-kit/utils": "^1.0"
+            },
+            "suggest": {
+                "ext-swoole": "The swoole extension is required for running"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SwooleKit\\WebSocket\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a php websocket server manager powered by swoole",
+            "homepage": "https://github.com/inhere/swoole-kit/websocket-server",
+            "keywords": [
+                "http",
+                "library",
+                "server",
+                "swoole",
+                "tcp",
+                "udp",
+                "websocket"
+            ],
+            "time": "2018-04-30T15:56:22+00:00"
         },
         {
             "name": "swoole-libs/utils",
@@ -1993,62 +1955,8 @@
             "time": "2018-03-09T01:31:34+00:00"
         },
         {
-            "name": "swoole-libs/websocket",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swoole-libs/websocket.git",
-                "reference": "c5f4c1f3680f3f872d4e9f60d99651790547a982"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swoole-libs/websocket/c5f4c1f3680f3f872d4e9f60d99651790547a982.zip",
-                "reference": "c5f4c1f3680f3f872d4e9f60d99651790547a982",
-                "shasum": ""
-            },
-            "require": {
-                "inhere/http": "~1.0",
-                "inhere/server": "dev-master",
-                "php": ">=7.0.0",
-                "swoole-libs/context": "^1.0",
-                "swoole-libs/utils": "^1.0"
-            },
-            "suggest": {
-                "ext-swoole": "The swoole extension is required for running"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SwooleLib\\WebSocket\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a php websocket manager powered by swoole",
-            "homepage": "https://github.com/inhere/swoole-libs/websocket",
-            "keywords": [
-                "http",
-                "library",
-                "server",
-                "swoole",
-                "tcp",
-                "udp",
-                "websocket"
-            ],
-            "time": "2018-03-09T10:20:00+00:00"
-        },
-        {
             "name": "symfony/process",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -2096,17 +2004,67 @@
             "time": "2018-04-03T05:22:50+00:00"
         },
         {
+            "name": "toolkit/errors",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/errors.git",
+                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/errors/833845664332db9eed1cc4d322039a8f2fc68d8c.zip",
+                "reference": "833845664332db9eed1cc4d322039a8f2fc68d8c",
+                "shasum": ""
+            },
+            "require": {
+                "mylib/obj-utils": "^1.0",
+                "mylib/php-utils": "^1.0",
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool",
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyLib\\Error\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some simple errors tool library of the php",
+            "homepage": "https://github.com/php-mylib/errors",
+            "keywords": [
+                "library",
+                "php",
+                "tool"
+            ],
+            "time": "2018-03-09T03:51:36+00:00"
+        },
+        {
             "name": "toolkit/toolkit",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/toolkit.git",
-                "reference": "d6b94bae0b4b53ca5e74762664632fd5d4d941a1"
+                "reference": "40838b5f87cabfb9a1db0583952cab171a75ee42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-toolkit/toolkit/d6b94bae0b4b53ca5e74762664632fd5d4d941a1.zip",
-                "reference": "d6b94bae0b4b53ca5e74762664632fd5d4d941a1",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/toolkit/40838b5f87cabfb9a1db0583952cab171a75ee42.zip",
+                "reference": "40838b5f87cabfb9a1db0583952cab171a75ee42",
                 "shasum": ""
             },
             "require": {
@@ -2167,7 +2125,101 @@
                 "php",
                 "tools"
             ],
-            "time": "2018-04-22T07:15:34+00:00"
+            "time": "2018-04-30T07:46:18+00:00"
+        },
+        {
+            "name": "toolkit/toolkit-plus",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/toolkit-plus.git",
+                "reference": "c6b16b32cbf4aa70a172fb607be978d0404247da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/toolkit-plus/c6b16b32cbf4aa70a172fb607be978d0404247da.zip",
+                "reference": "c6b16b32cbf4aa70a172fb607be978d0404247da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.0",
+                "toolkit/toolkit": "dev-master"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool",
+                "inhere/simple-print-tool": "Very lightweight data printing tools",
+                "matthiasmullie/minify": "compress css and js. if you want to compress assets."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ToolkitPlus\\": "libs/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "some useful library of the php",
+            "homepage": "https://github.com/php-toolkit/toolkit-plus",
+            "keywords": [
+                "library",
+                "php",
+                "tool"
+            ],
+            "time": "2018-04-30T04:38:40+00:00"
+        },
+        {
+            "name": "toolkit/web-utils",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/web-utils.git",
+                "reference": "24b83f2fad8a141e568abc811e6fca25e2e547a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/web-utils/24b83f2fad8a141e568abc811e6fca25e2e547a6.zip",
+                "reference": "24b83f2fad8a141e568abc811e6fca25e2e547a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "suggest": {
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\Web\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple web tool library of the php",
+            "homepage": "https://github.com/php-toolkit/web-utils",
+            "keywords": [
+                "library"
+            ],
+            "time": "2018-05-01T05:32:45+00:00"
         }
     ],
     "packages-dev": [
@@ -2341,7 +2393,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2504,11 +2556,12 @@
         "inhere/lite-cache": 20,
         "inhere/lite-db": 20,
         "inhere/micro-framework": 20,
-        "toolkit/toolkit": 20,
         "inhere/simple-active-record": 20,
         "inhere/server": 20,
-        "swoole-libs/http-server": 20,
-        "swoole-libs/websocket": 20,
+        "swoole-kit/http-server": 20,
+        "swoole-kit/websocket-server": 20,
+        "toolkit/toolkit": 20,
+        "toolkit/toolkit-plus": 20,
         "inhere/simple-print-tool": 20,
         "ulue/annotations": 20
     },

@@ -8,14 +8,15 @@
 
 namespace App\Provider;
 
-use App\Listeners\MysqlListener;
+use App\Listener\MysqlListener;
 use Inhere\Event\EventManager;
-use Inhere\Library\Collections\Configuration;
-use Inhere\Library\Components\DatabaseClient;
-use Inhere\Library\Components\MemcacheClient;
-use Inhere\Library\Components\RedisClient;
-use Inhere\Library\DI\Container;
-use Inhere\Library\DI\ServiceProviderInterface;
+use Toolkit\Collection\Configuration;
+use Inhere\LiteCache\MemCache;
+use Inhere\LiteCache\LiteRedis;
+use Toolkit\DI\Container;
+use Toolkit\DI\ServiceProviderInterface;
+use Inhere\LiteCache\RedisCache;
+use Inhere\LiteDb\ExtendedPdo;
 
 /**
  * Class CommonServiceProvider
@@ -28,6 +29,7 @@ class CommonServiceProvider implements ServiceProviderInterface
      * @param Container $di
      * @throws \RuntimeException
      * @throws \InvalidArgumentException
+     * @throws \Inhere\Exceptions\DependencyResolutionException
      */
     public function register(Container $di)
     {
@@ -48,6 +50,10 @@ class CommonServiceProvider implements ServiceProviderInterface
         $this->registerCacheServices($di);
     }
 
+    /**
+     * @param Container $di
+     * @throws \Inhere\Exceptions\DependencyResolutionException
+     */
     private function registerDbServices(Container $di)
     {
         // MySQL: Database connection
@@ -58,7 +64,7 @@ class CommonServiceProvider implements ServiceProviderInterface
             ]));
             $config = $di->get('config')->get('mainMysql.master');
 
-            return new DatabaseClient($config);
+            return new ExtendedPdo($config);
         });
 
         $di->set('mainMysql.slave', function (Container $di) {
@@ -71,7 +77,7 @@ class CommonServiceProvider implements ServiceProviderInterface
             $config = $di->get('config')->get('mainMysql.slave');
             // $db->setEventManager($em);
 
-            return new DatabaseClient($config);
+            return new ExtendedPdo($config);
         });
 
         // Mongo: Connecting to Mongo
@@ -85,24 +91,28 @@ class CommonServiceProvider implements ServiceProviderInterface
         });
     }
 
+    /**
+     * @param Container $di
+     * @throws \Inhere\Exceptions\DependencyResolutionException
+     */
     private function registerCacheServices(Container $di)
     {
         $di->set('memcache', function (Container $di) {
             $config = $di->get('config')->get('memcache');
 
-            return new MemcacheClient($config);
+            return new MemCache($config);
         });
 
-        // $di->set('cacheRedis', function (Container $di) {
-        //     $config = $di->get('config')->get('cacheRedis');
-        //
-        //     return new RedisClient($config);
-        // });
+        $di->set('cacheRedis', function (Container $di) {
+            $config = $di->get('config')->get('cacheRedis');
+
+            return new RedisCache($config);
+        });
 
         $di->set('dataRedis', function (Container $di) {
             $config = $di->get('config')->get('dataRedis');
 
-            return new RedisClient($config);
+            return new LiteRedis($config);
         });
     }
 }

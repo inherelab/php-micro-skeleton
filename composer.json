@@ -26,16 +26,16 @@
     "inhere/lite-cache": "dev-master",
     "inhere/lite-db": "dev-master",
     "inhere/micro-framework": "dev-master",
-    "toolkit/toolkit": "dev-master",
     "inhere/simple-active-record": "dev-master",
     "inhere/server": "dev-master",
-    "swoole-libs/http-server": "dev-master",
-    "swoole-libs/websocket": "dev-master",
+    "swoole-kit/http-server": "dev-master",
+    "swoole-kit/websocket-server": "dev-master",
+    "toolkit/toolkit": "dev-master",
+    "toolkit/toolkit-plus": "dev-master",
     "monolog/monolog": "^1.2",
     "overtrue/pinyin": "^3.0",
     "phpfastcache/phpfastcache": "^6.0",
-    "symfony/process": "^3.3",
-    "mylib/file-utils": "^1.0"
+    "symfony/process": "^3.3"
   },
   "require-dev": {
     "inhere/simple-print-tool": "dev-master",

@@ -11,4 +11,5 @@
 $app->registerCommands('App\\Console\\Command', get_path('app/Console/Command'));
 $app->registerGroups('App\\Console\\Controller', get_path('app/Console/Controller'));
 
+$app->addCommand(\Inhere\Console\BuiltIn\DevServerCommand::class);
 $app->addController(\Inhere\Console\BuiltIn\PharController::class);

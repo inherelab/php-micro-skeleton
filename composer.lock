@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "55112914bacbde159f8e63348e01d929",
@@ -454,7 +454,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework",
-                "reference": "9f9f278619a54df953317259cb9bf0db25b333fc"
+                "reference": "819eaac916872fca2984b82905d9958140e47a59"
             },
             "require": {
                 "inhere/console": "dev-master",
@@ -464,15 +464,7 @@
                 "inhere/php-validate": "~2.0",
                 "inhere/sroute": "dev-master",
                 "monolog/monolog": "^1.2",
-                "mylib/arr-utils": "~1.0",
-                "mylib/collection": "~1.0",
-                "mylib/di": "~1.0",
                 "mylib/errors": "~1.0",
-                "mylib/file-utils": "~1.0",
-                "mylib/obj-utils": "~1.0",
-                "mylib/php-utils": "~1.0",
-                "mylib/str-utils": "~1.0",
-                "mylib/sys-utils": "~1.0",
                 "mylib/web-utils": "~1.0",
                 "php": ">7.0.0"
             },
@@ -506,7 +498,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-03-20T12:30:11+00:00"
+            "time": "2018-04-23T04:03:02+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -561,16 +553,16 @@
         },
         {
             "name": "inhere/php-validate",
-            "version": "v2.4.11",
+            "version": "v2.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "ac46a06094de579b73998a47722bf1ef6b9eecab"
+                "reference": "48594b8cadf8a06c446b0fe683895c531837d5f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-validate/ac46a06094de579b73998a47722bf1ef6b9eecab.zip",
-                "reference": "ac46a06094de579b73998a47722bf1ef6b9eecab",
+                "url": "https://files.phpcomposer.com/files/inhere/php-validate/48594b8cadf8a06c446b0fe683895c531837d5f7.zip",
+                "reference": "48594b8cadf8a06c446b0fe683895c531837d5f7",
                 "shasum": ""
             },
             "require": {
@@ -602,7 +594,7 @@
                 "library",
                 "validate"
             ],
-            "time": "2018-04-21T10:01:57+00:00"
+            "time": "2018-04-28T14:31:36+00:00"
         },
         {
             "name": "inhere/server",
@@ -720,12 +712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "41e12eac8c3fbe7b75f3e08d3f543396816491d0"
+                "reference": "e4ff5a3c4a21d1055fbddcf7a7582b6eefb1c9bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/41e12eac8c3fbe7b75f3e08d3f543396816491d0.zip",
-                "reference": "41e12eac8c3fbe7b75f3e08d3f543396816491d0",
+                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/e4ff5a3c4a21d1055fbddcf7a7582b6eefb1c9bf.zip",
+                "reference": "e4ff5a3c4a21d1055fbddcf7a7582b6eefb1c9bf",
                 "shasum": ""
             },
             "require": {
@@ -762,7 +754,7 @@
                 "route",
                 "router"
             ],
-            "time": "2018-04-22T15:21:55+00:00"
+            "time": "2018-04-27T12:57:32+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -984,56 +976,6 @@
                 "tool"
             ],
             "time": "2018-03-29T11:24:57+00:00"
-        },
-        {
-            "name": "mylib/di",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mylib/di.git",
-                "reference": "a891e6b4a60bc97d2ffcb789a6f8bc2f219bb5ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-mylib/di/a891e6b4a60bc97d2ffcb789a6f8bc2f219bb5ef.zip",
-                "reference": "a891e6b4a60bc97d2ffcb789a6f8bc2f219bb5ef",
-                "shasum": ""
-            },
-            "require": {
-                "mylib/obj-utils": "^1.0",
-                "php": ">=7.0.0",
-                "psr/container": "^1.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyLib\\DI\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some di tool library of the php",
-            "homepage": "https://github.com/php-mylib/di",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-03-20T10:19:40+00:00"
         },
         {
             "name": "mylib/errors",

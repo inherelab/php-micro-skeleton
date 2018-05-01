@@ -10,7 +10,7 @@ namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
 use Mco\Helpers\Respond;
-use Mco\Web\BaseController;
+use Mco\Http\BaseController;
 
 /**
  * class HomeController

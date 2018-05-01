@@ -9,7 +9,7 @@
 namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
-use Mco\Web\BaseController;
+use Mco\Http\BaseController;
 
 /**
  * class HomeController

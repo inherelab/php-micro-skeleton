@@ -8,7 +8,7 @@
 
 namespace App\Http\Controller;
 
-use Mco\Web\BaseController;
+use Mco\Http\BaseController;
 
 /**
  * class ErrorController

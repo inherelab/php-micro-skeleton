@@ -15,7 +15,7 @@ use App\Provider\WebServiceProvider;
 use Mco\Component\EnvDetector;
 use Toolkit\DI\Container;
 use Toolkit\PhpUtil\PhpDotEnv;
-use Mco\Web\App as WebApp;
+use Mco\Http\App as WebApp;
 use Mco\Console\App as CliApp;
 
 /**

@@ -9,7 +9,7 @@
 namespace App\Console\Controller;
 
 use Inhere\Console\Controller;
-use Mco\Web\AppServer;
+use Mco\Server\AppServer;
 
 /**
  * Class ServerController

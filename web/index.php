@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \Mco\Web\App $app
+ * @var \Mco\Http\App $app
  * @var Inhere\Library\DI\Container $di
  */
 

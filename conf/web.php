@@ -6,7 +6,7 @@
 use Inhere\Library\Helpers\Arr;
 use Inhere\Library\Web\ViewRenderer;
 use Inhere\Route\ORouter;
-use Mco\Web\RouteDispatcher;
+use Mco\Http\RouteDispatcher;
 
 return Arr::merge(require __DIR__ . '/_base.php', [
     'application' => [

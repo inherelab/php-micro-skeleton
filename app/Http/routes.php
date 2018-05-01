@@ -15,7 +15,7 @@ $router->get('/routes', HomeController::class . '@routes');
 $router->get('/home[/{act}]', HomeController::class);
 $router->get('/test[/{act}]', TestController::class);
 
-$router->ctrl('/apidocs', \Mco\Web\Controllers\ApiDocController::class, [
+$router->ctrl('/apidocs', \Mco\Http\Controllers\ApiDocController::class, [
     '' => 'get',
     'gen' => 'get',
 ]);

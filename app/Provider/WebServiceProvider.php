@@ -8,6 +8,8 @@
 
 namespace App\Provider;
 
+use App\Listener\AppListener;
+use Mco\Http\App;
 use Toolkit\Collection\Configuration;
 use Toolkit\DI\Container;
 use Toolkit\DI\ServiceProviderInterface;
@@ -22,27 +24,13 @@ class WebServiceProvider implements ServiceProviderInterface
     /**
      * 注册一项服务(可能含有多个服务)提供者到容器中
      * @param Container $di
+     * @throws \Toolkit\DI\Exception\DependencyResolutionException
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
      * @throws \RangeException
      */
     public function register(Container $di)
     {
-        /** @var Configuration $config */
-        $config = $di->get('config');
-
-        $config->load(include BASE_PATH . '/conf/web.php');
-
-        // current env config file. e.g '/config/web/dev.php'
-        $envFile = get_path('conf/web/' . APP_ENV. '.php');
-
-        if (is_readable($envFile)) {
-            $config->load(include $envFile);
-        }
-
-        // load services from config
-        $di->sets($config->remove('services'));
-
         $this->loadWebRoutes($di->get('router'));
 
         // ...

@@ -3,36 +3,30 @@
  * the common config
  */
 
-// use Overtrue\Pinyin\MemoryFileDictLoader;
 use Inhere\Library\Utils\LiteLogger;
-use Overtrue\Pinyin\Pinyin;
 
 return [
     'name'    => 'My App',
     'debug'    => false,
     'env'      => 'pdt',
     'charset'  => 'UTF-8',
-    'timeZone' => 'Asia/Shanghai',
     'rootPath' => BASE_PATH,
 
     'enableCsrfToken' => true,
 
-    'language'   => [
-        'lang'      => 'zh-CN',
-        'langs'     => ['en', 'zh-CN'],
-        'basePath'  => dirname(__DIR__).'/res/languages',
-        'langFiles' => [
-            'response.php',
-        ],
+    'serviceProviders' => [
+        \App\Provider\CommonServiceProvider::class,
     ],
 
+    // common services
     'services' => [
+
         /**
          * basic service
          */
 
         'logger' => [
-            'target'       => LiteLogger::class,
+            'class'       => LiteLogger::class,
             'name'         => 'app',
             'logFile'      => '@tmp/logs/application.log',
             'basePath'     => '@tmp/logs',
@@ -41,13 +35,24 @@ return [
             'bufferSize'   => 1000, // 1000,
             'pathResolver' => 'alias_path',
         ],
+
+        'language'   => [
+            'class' => \Toolkit\Collection\Language::class,
+            'lang'      => 'zh-CN',
+            'langs'     => ['en', 'zh-CN'],
+            'basePath'  => dirname(__DIR__).'/res/languages',
+            'langFiles' => [
+                'response.php',
+            ],
+        ],
+
         'pinyin' => [
-            'target' => Pinyin::class,
-            // '_args' => [ MemoryFileDictLoader::class ],
+            'class' => \Overtrue\Pinyin\Pinyin::class,
+            //[ \Overtrue\Pinyin\MemoryFileDictLoader::class ],
         ],
         'db'     => [
-            'target' => \Inhere\Library\Components\DatabaseClient::class,
-            '_args'  => [
+            'class' => \Inhere\Library\Components\DatabaseClient::class,
+            [
                 [
                     'debug'       => 1,
                     'user'        => 'root',
@@ -58,8 +63,8 @@ return [
             ],
         ],
         'cache' => [
-            'target' => \phpFastCache\Helper\Psr16Adapter::class,
-            '_args' => [
+            'class' => \phpFastCache\Helper\Psr16Adapter::class,
+            [
                 'files',
                 [
                     'path' => alias_path('@user/tmp/caches'),
@@ -67,5 +72,5 @@ return [
                 ]
             ]
         ],
-    ],
+    ]
 ];

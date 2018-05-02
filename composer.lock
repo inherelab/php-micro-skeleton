@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "b9d61b1fd9cbc15e89ae3ae4b20f143b",
@@ -63,19 +63,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-asset-manager.git",
-                "reference": "be4a4075aa7bbc74820ec3c6aed001fe9cefada5"
+                "reference": "0995dc5a83af02e53a437884e00c28395d6ec734"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-asset-manager/be4a4075aa7bbc74820ec3c6aed001fe9cefada5.zip",
-                "reference": "be4a4075aa7bbc74820ec3c6aed001fe9cefada5",
+                "url": "https://files.phpcomposer.com/files/inhere/php-asset-manager/0995dc5a83af02e53a437884e00c28395d6ec734.zip",
+                "reference": "0995dc5a83af02e53a437884e00c28395d6ec734",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">7.0.0",
+                "toolkit/file-utils": "~1.0"
             },
             "suggest": {
-                "inhere/simple-print-tool": "Very lightweight data printing tools",
                 "matthiasmullie/minify": "compress css and js. if you want to compress assets."
             },
             "type": "library",
@@ -104,7 +104,7 @@
                 "css",
                 "library"
             ],
-            "time": "2017-12-14T05:08:02+00:00"
+            "time": "2018-05-01T15:03:15+00:00"
         },
         {
             "name": "inhere/console",
@@ -713,12 +713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "e4ff5a3c4a21d1055fbddcf7a7582b6eefb1c9bf"
+                "reference": "ff6a1b6ec87d868cc0fef1ca9fb01be575a4b63b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/e4ff5a3c4a21d1055fbddcf7a7582b6eefb1c9bf.zip",
-                "reference": "e4ff5a3c4a21d1055fbddcf7a7582b6eefb1c9bf",
+                "url": "https://files.phpcomposer.com/files/inhere/php-srouter/ff6a1b6ec87d868cc0fef1ca9fb01be575a4b63b.zip",
+                "reference": "ff6a1b6ec87d868cc0fef1ca9fb01be575a4b63b",
                 "shasum": ""
             },
             "require": {
@@ -755,7 +755,7 @@
                 "route",
                 "router"
             ],
-            "time": "2018-04-27T12:57:32+00:00"
+            "time": "2018-05-02T01:14:53+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1628,12 +1628,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/toolkit.git",
-                "reference": "40838b5f87cabfb9a1db0583952cab171a75ee42"
+                "reference": "c931d77366f962e7651bbd81223d82232d263de0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-toolkit/toolkit/40838b5f87cabfb9a1db0583952cab171a75ee42.zip",
-                "reference": "40838b5f87cabfb9a1db0583952cab171a75ee42",
+                "url": "https://files.phpcomposer.com/files/php-toolkit/toolkit/c931d77366f962e7651bbd81223d82232d263de0.zip",
+                "reference": "c931d77366f962e7651bbd81223d82232d263de0",
                 "shasum": ""
             },
             "require": {
@@ -1645,12 +1645,13 @@
                 "toolkit/collection": "self.version",
                 "toolkit/data-parser": "self.version",
                 "toolkit/di": "self.version",
+                "toolkit/file-parse": "self.version",
                 "toolkit/file-utils": "self.version",
+                "toolkit/helper-utils": "self.version",
                 "toolkit/obj-utils": "self.version",
                 "toolkit/php-utils": "self.version",
                 "toolkit/str-utils": "self.version",
-                "toolkit/sys-utils": "self.version",
-                "toolkit/utils": "self.version"
+                "toolkit/sys-utils": "self.version"
             },
             "require-dev": {
                 "inhere/console": "dev-master"
@@ -1668,12 +1669,15 @@
                     "Toolkit\\Collection\\": "libs/collection/src/",
                     "Toolkit\\DI\\": "libs/di/src/",
                     "Toolkit\\DataParser\\": "libs/data-parser/src/",
-                    "Toolkit\\FileUtil\\": "libs/file-utils/src/",
+                    "Toolkit\\File\\": "libs/file-utils/src/",
+                    "Toolkit\\File\\Parse\\": "libs/file-parse/src/",
                     "Toolkit\\ObjUtil\\": "libs/obj-utils/src/",
                     "Toolkit\\PhpUtil\\": "libs/php-utils/src/",
                     "Toolkit\\StrUtil\\": "libs/str-utils/src/",
-                    "Toolkit\\SysUtil\\": "libs/sys-utils/src/",
-                    "Toolkit\\Util\\": "libs/utils/src/"
+                    "Toolkit\\Sys\\": "libs/sys-utils/src/",
+                    "Toolkit\\Util\\": "libs/helper-utils/src/Util",
+                    "Toolkit\\Helper\\": "libs/helper-utils/src/Helper",
+                    "Toolkit\\Traits\\": "libs/helper-utils/src/Traits"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1694,7 +1698,7 @@
                 "php",
                 "tools"
             ],
-            "time": "2018-04-30T07:46:18+00:00"
+            "time": "2018-05-01T16:27:48+00:00"
         },
         {
             "name": "toolkit/toolkit-plus",

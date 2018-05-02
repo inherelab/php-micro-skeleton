@@ -13,7 +13,6 @@ use App\Provider\CommonServiceProvider;
 use App\Provider\ConsoleServiceProvider;
 use App\Provider\WebServiceProvider;
 use Mco\Component\EnvDetector;
-use Toolkit\DI\Container;
 use Toolkit\PhpUtil\PhpDotEnv;
 use Mco\Http\App as WebApp;
 use Mco\Console\App as CliApp;
@@ -25,20 +24,21 @@ use Mco\Console\App as CliApp;
 class Bootstrap
 {
     /**
-     * @param Container $di
-     * @return CliApp|WebApp
+     * @return \Mco\Http\App|\Mco\Console\App
      */
-    public static function boot(Container $di)
+    public static function boot()
     {
-        \Mco::$di = $di;
-
-        return (new self)->run($di);
+        return (new self)
+            ->prepareEnv()
+            ->settingPhp()
+            ->createApp();
     }
 
-    protected function prepare()
+    protected function prepareEnv(): self
     {
         // init .env
         PhpDotEnv::load(BASE_PATH);
+
         // init env setting
         EnvDetector::setHost2env(HOST2ENV);
         EnvDetector::setDomain2env(DOMAIN2ENV);
@@ -46,39 +46,34 @@ class Bootstrap
         // define current is IN_CODE_TESTING.
         \defined('IN_CODE_TESTING') || \define('IN_CODE_TESTING', false);
 
-        date_default_timezone_set(env('TIMEZONE', 'UTC'));
-    }
-
-    /**
-     * @param Container $di
-     * @return CliApp|WebApp
-     * @throws \InvalidArgumentException
-     */
-    protected function run(Container $di)
-    {
-        $this->prepare();
-
-        // Read common services
-        $di->registerServiceProvider(new CommonServiceProvider());
-
         if (RUN_MODE === 'web') {
-            $app = $this->loadWebServices($di);
-        } else {
-            $app = $this->loadCliServices($di);
+            // Detect environment: allow change env by HOSTNAME OR HTTP_HOST
+            if (!$envName = env('APP_ENV')) {
+                $envName = EnvDetector::getByHost() ?: EnvDetector::getByDomain(APP_PDT);
+            }
+        } elseif (RUN_MODE === 'cli') {
+            // Detect environment: allow change env by HOSTNAME
+            if (!$envName = env('APP_ENV')) {
+                $envName = EnvDetector::getByHost(APP_PDT);
+            }
         }
 
-        $this->init($di);
+        // APP_ENV Current application environment
+        \defined('APP_ENV') || \define('APP_ENV', $envName);
 
-        return $app;
+        return $this;
     }
 
     /**
-     * @param Container $di
      */
-    public function init(Container $di)
+    public function settingPhp()
     {
-        // date timezone
-//        date_default_timezone_set($config->get('timezone', 'UTC'));
+        \date_default_timezone_set(env('TIME_ZONE', 'UTC'));
+
+        // Set the MB extension encoding to the same character set
+        if (\function_exists('mb_internal_encoding')) {
+            mb_internal_encoding('utf-8');
+        }
 
         switch (APP_ENV) {
             case APP_DEV:
@@ -100,68 +95,27 @@ class Bootstrap
             ini_set('html_errors', 1);
         }
 
-        // Set the MB extension encoding to the same character set
-        if (\function_exists('mb_internal_encoding')) {
-            mb_internal_encoding('utf-8');
-        }
-
-        // on runtime end.
-        register_shutdown_function(AppListener::class . '::onRuntimeEnd', $di);
+        return $this;
     }
 
     /**
-     * @param Container $di
-     * @return WebApp
+     * @return \Mco\Http\App|\Mco\Console\App
+     * @throws \Toolkit\DI\Exception\DependencyResolutionException
      * @throws \InvalidArgumentException
      */
-    public function loadWebServices(Container $di)
+    protected function createApp()
     {
-        // Detect environment: allow change env by HOSTNAME OR HTTP_HOST
-        if (!$envName = env('APP_ENV')) {
-            $envName = EnvDetector::getEnvNameByHost() ?: EnvDetector::getEnvNameByDomain(APP_PDT);
+        // on runtime end.
+        \register_shutdown_function(AppListener::class . '::onRuntimeEnd');
+
+        if (RUN_MODE === 'web') {
+            $app = new WebApp(require \dirname(__DIR__) . '/conf/web.php');
+        } else {
+            $app = new CliApp(require \dirname(__DIR__) . '/conf/console.php');
         }
 
-        // APP_ENV Current application environment
-        \defined('APP_ENV') || \define('APP_ENV', $envName);
-
-        // Some services for WEB
-        $di->registerServiceProvider(new WebServiceProvider());
-
-        $em = $di->get('eventManager');
+        $em = $app->get('eventManager');
         $em->attach('app', new AppListener());
-
-        $app = new WebApp($di);
-        //$app->setEventManager($em);
-
-        return $app;
-    }
-
-    /**
-     * @param Container $di
-     * @return CliApp
-     */
-    public function loadCliServices(Container $di)
-    {
-        // Detect environment: allow change env by HOSTNAME
-        if (!$envName = env('APP_ENV')) {
-            $envName = EnvDetector::getEnvNameByHost(APP_PDT);
-        }
-
-        // APP_ENV Current application environment
-        \defined('APP_ENV') || \define('APP_ENV', $envName);
-
-        // some services for CLI
-        $di->registerServiceProvider(new ConsoleServiceProvider());
-
-        $em = $di->get('eventManager');
-        $em->attach('app', new AppListener());
-
-        $app = new CliApp($di);
-
-        // save to DI
-        // $di->set('app', $app);
-
-        //$app->setEventManager($em);
 
         return $app;
     }

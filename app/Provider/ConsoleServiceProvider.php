@@ -8,6 +8,8 @@
 
 namespace App\Provider;
 
+use App\Listener\AppListener;
+use Mco\Console\App;
 use Toolkit\Collection\Configuration;
 use Toolkit\DI\Container;
 use Toolkit\DI\ServiceProviderInterface;
@@ -27,20 +29,5 @@ class ConsoleServiceProvider implements ServiceProviderInterface
      */
     public function register(Container $di)
     {
-        /** @var Configuration $config */
-        $config = $di->get('config');
-
-        $config->load(include BASE_PATH . '/conf/console.php');
-
-        // current env config file. e.g '/config/console/dev.php'
-        $envFile = get_path('conf/console/' . APP_ENV. '.php');
-
-        if (is_readable($envFile)) {
-            $config->load(include $envFile);
-        }
-
-        // load services from config
-        $di->sets($config->remove('services'));
-
     }
 }

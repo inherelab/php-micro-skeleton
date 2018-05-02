@@ -33,16 +33,6 @@ class CommonServiceProvider implements ServiceProviderInterface
      */
     public function register(Container $di)
     {
-        // Register the global configuration as config
-        $di->set('config', function () {
-            // load basic common config data.
-            return new Configuration(include BASE_PATH . '/conf/_base.php');
-        });
-
-        $di->set('eventManager', function () {
-            return new EventManager();
-        });
-
         // database services.
         $this->registerDbServices($di);
 
@@ -52,7 +42,7 @@ class CommonServiceProvider implements ServiceProviderInterface
 
     /**
      * @param Container $di
-     * @throws \Inhere\Exceptions\DependencyResolutionException
+     * @throws \Toolkit\DI\Exception\DependencyResolutionException
      */
     private function registerDbServices(Container $di)
     {

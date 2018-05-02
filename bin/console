@@ -4,7 +4,7 @@
  * entry file for CLI
  *
  * @var Mco\Console\App $app
- * @var Inhere\Library\DI\Container $di
+ * @var Toolkit\DI\Container $di
  */
 
 define('RUN_MODE',  'cli');
@@ -12,10 +12,8 @@ define('RUN_MODE',  'cli');
 include dirname(__DIR__) . '/conf/defined.php';
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-$di = new \Inhere\Library\DI\Container();
-
 // boot
-$app = \App\Bootstrap::boot($di);
+$app = \App\Bootstrap::boot();
 
 // in the unit testing.
 if (IN_CODE_TESTING) {

@@ -3,12 +3,11 @@
  * config for web
  */
 
-use Inhere\Library\Helpers\Arr;
-use Inhere\Library\Web\ViewRenderer;
+use Toolkit\ArrUtil\Arr;
 use Inhere\Route\ORouter;
 use Mco\Http\RouteDispatcher;
 
-return Arr::merge(require __DIR__ . '/_base.php', [
+return Arr::merge(require __DIR__ . '/config.php', [
     'application' => [
         'host' => 'localhost',
         'baseTitle' => 'ArtFonts',
@@ -33,21 +32,21 @@ return Arr::merge(require __DIR__ . '/_base.php', [
          */
 
         'router' => [
-            'target' => ORouter::class,
+            'class' => ORouter::class,
             'config' => [
                 'ignoreLastSep' => true,
                 'tmpCacheNumber' => 200,
             ],
         ],
         'routeDispatcher' => [
-            'target' => RouteDispatcher::class,
+            'class' => RouteDispatcher::class,
             'outputBuffering' => 'append',
             'config' => [
                 'dynamicAction' => true,
             ],
         ],
         'renderer' => [
-            'target' => ViewRenderer::class,
+            'class' => \Toolkit\Web\ViewRenderer::class,
             'suffix' => 'tpl',
             'layout' => '_layouts/default.tpl',
             'viewsPath' => dirname(__DIR__) . '/resources/views',

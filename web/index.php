@@ -10,10 +10,8 @@ defined('IN_SWOOLE') || define('IN_SWOOLE', false);
 include dirname(__DIR__) . '/conf/defined.php';
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-$di = new \Inhere\Library\DI\Container();
-
 // boot
-$app = \App\Bootstrap::boot($di);
+$app = \App\Bootstrap::boot();
 
 // in the unit testing.
 if (IN_CODE_TESTING) {

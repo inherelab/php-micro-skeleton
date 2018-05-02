@@ -6,7 +6,7 @@
 use Inhere\Library\Helpers\Arr;
 use Inhere\Library\Utils\LiteLogger;
 
-return Arr::merge(require __DIR__ . '/_base.php', [
+return Arr::merge(require __DIR__ . '/config.php', [
     'assetUrls' => [
         'jquery' => 'https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js',
         'riot3' => 'https://cdn.bootcss.com/riot/3.7.3/riot+compiler.min.js',

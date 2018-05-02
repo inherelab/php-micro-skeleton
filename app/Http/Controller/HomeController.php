@@ -9,7 +9,7 @@
 namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
-use Mco\Helpers\Respond;
+use Mco\Helper\Respond;
 use Mco\Http\BaseController;
 
 /**
@@ -20,6 +20,7 @@ class HomeController extends BaseController
     public function indexAction()
     {
         echo 'OOO';
+        //\var_dump(__METHOD__);
         return 'hello, world';
     }
 

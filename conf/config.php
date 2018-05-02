@@ -6,13 +6,19 @@
 use Inhere\Library\Utils\LiteLogger;
 
 return [
-    'name'    => 'My App',
-    'debug'    => false,
-    'env'      => 'pdt',
+    'name'    => env('APP_NAME', 'My App'),
+    'debug'    => env('APP_DEBUG', false),
+    'env'      => env('APP_ENV', 'pdt'),
     'charset'  => 'UTF-8',
     'rootPath' => BASE_PATH,
 
     'enableCsrfToken' => true,
+
+    'errorRender' => [
+        'displayErrorDetails' => true,
+        'rootPath' => BASE_PATH,
+        'hideRootPath' => true,
+    ],
 
     'serviceProviders' => [
         \App\Provider\CommonServiceProvider::class,
@@ -33,7 +39,7 @@ return [
             'level'        => LiteLogger::DEBUG,
             'splitType'    => 1,
             'bufferSize'   => 1000, // 1000,
-            'pathResolver' => 'alias_path',
+            'pathResolver' => 'alias',
         ],
 
         'language'   => [
@@ -67,7 +73,7 @@ return [
             [
                 'files',
                 [
-                    'path' => alias_path('@user/tmp/caches'),
+                    'path' => alias('@tmp/caches'),
                     'securityKey' => 's6df89rtdlw',
                 ]
             ]

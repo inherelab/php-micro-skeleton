@@ -21,6 +21,6 @@ $router->ctrl('/apidocs', \Mco\Http\Controllers\ApiDocController::class, [
 ]);
 $router->rest('/rest', \App\Http\Controller\RestController::class);
 
-$router->any('/404', ErrorController::class . '@notFound');
-$router->any('/405', ErrorController::class . '@notAllowed');
-$router->any('/500', ErrorController::class . '@error');
+$router->get('/404', ErrorController::class . '@notFound');
+$router->get('/405', ErrorController::class . '@notAllowed');
+$router->get('/500', ErrorController::class . '@error');

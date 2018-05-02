@@ -5,7 +5,6 @@
 
 use Toolkit\ArrUtil\Arr;
 use Inhere\Route\ORouter;
-use Mco\Http\RouteDispatcher;
 
 return Arr::merge(require __DIR__ . '/config.php', [
     'application' => [
@@ -16,14 +15,18 @@ return Arr::merge(require __DIR__ . '/config.php', [
     ],
 
     'displayErrorDetails' => true,
-    'determineRouteBeforeAppMiddleware' => false,
+    'determineRouteBeforeAppMiddleware' => true,
 
     'filterFavicon' => true,
 
     'response' => [
         'chunkSize' => 4096,
         'httpVersion' => '1.1',
-        'addContentLengthHeader' => true,
+        'addContentLengthHeader' => false,
+    ],
+
+    'serviceProviders' => [
+        \App\Provider\WebServiceProvider::class,
     ],
 
     'services' => [
@@ -39,8 +42,8 @@ return Arr::merge(require __DIR__ . '/config.php', [
             ],
         ],
         'routeDispatcher' => [
-            'class' => RouteDispatcher::class,
-            'outputBuffering' => 'append',
+            'class' => \Mco\Http\RouteDispatcher::class,
+            'outputBuffering' => false,
             'config' => [
                 'dynamicAction' => true,
             ],

@@ -12,7 +12,7 @@ return [
     'debug' => true,
     'name' => 'server',
     'root_path' => BASE_PATH,
-    'pid_file' => BASE_PATH . '/user/tmp/server.pid',
+    'pid_file' => BASE_PATH . '/tmp/server.pid',
 //    'auto_reload' => 'app,config',
 
     'error' => [
@@ -37,7 +37,7 @@ return [
     ],
 
     // main server
-    'main_server' => [
+    'server' => [
         'type' => 'http', // http https tcp udp ws wss
         'port' => 9501,
         'extend_events' => [
@@ -47,19 +47,19 @@ return [
     ],
 
     // attach port server by config
-    'attach_servers' => [
+    'ports' => [
         'port1' => [
             'host' => '0.0.0.0',
             'port' => '9761',
             'type' => 'udp',
             // must setting the handler class in config.
-            'listener' => \Inhere\Server\PortListeners\UdpListener::class,
+            'listener' => \Inhere\Server\Listener\Port\UdpListener::class,
         ],
-//        'rpcServer' => [
-//            'listener' => \Sws\Rpc\Application::class,
-//            'host' => '0.0.0.0',
-//            'port' => '9762',
-//        ]
+        // 'rpcServer' => [
+        //     'listener' => \Sws\Rpc\Application::class,
+        //     'host' => '0.0.0.0',
+        //     'port' => '9762',
+        // ]
     ],
 
     'swoole' => [
@@ -71,7 +71,7 @@ return [
         'log_file' => BASE_PATH . '/user/tmp/logs/swoole.log',
 
         'upload_tmp_dir' => BASE_PATH . '/user/tmp/upFiles/',
-//        'document_root' => BASE_PATH . '/web',
-//        'enable_static_handler' => true,
+        'document_root' => BASE_PATH . '/web',
+        'enable_static_handler' => true,
     ]
 ];

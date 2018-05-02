@@ -8,9 +8,6 @@
 
 namespace App\Provider;
 
-use App\Listener\AppListener;
-use Mco\Http\App;
-use Toolkit\Collection\Configuration;
 use Toolkit\DI\Container;
 use Toolkit\DI\ServiceProviderInterface;
 use Inhere\Route\ORouter;
@@ -31,16 +28,8 @@ class WebServiceProvider implements ServiceProviderInterface
      */
     public function register(Container $di)
     {
-        $this->loadWebRoutes($di->get('router'));
+        //$this->loadWebRoutes($di->get('router'));
 
         // ...
-    }
-
-    /**
-     * @param ORouter $router
-     */
-    private function loadWebRoutes(ORouter $router)
-    {
-        include BASE_PATH . '/app/Http/routes.php';
     }
 }

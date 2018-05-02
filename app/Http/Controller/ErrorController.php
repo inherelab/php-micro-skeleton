@@ -22,16 +22,16 @@ class ErrorController extends BaseController
 
     public function errorAction()
     {
-        return $this->render('@lib/resources/views/500.tpl');
+        return $this->render('@resources/views/500.tpl');
     }
 
     public function notFoundAction()
     {
-        return $this->render('@lib/resources/views/404.tpl');
+        return $this->render('@resources/views/404.tpl');
     }
 
     public function notAllowedAction()
     {
-        return $this->render('@lib/resources/views/405.tpl');
+        return $this->render('@resources/views/405.tpl');
     }
 }

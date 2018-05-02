@@ -36,3 +36,16 @@ define('DOMAIN2ENV', [
     '127.0.0.1' => 'dev',
     'dev' => 'dev'
 ]);
+
+Mco::setAliases([
+    '@root' => BASE_PATH,
+    '@app' => BASE_PATH . '/app',
+    '@bin' => BASE_PATH . '/bin',
+    '@src' => BASE_PATH . '/src',
+    '@res' => BASE_PATH . '/res',
+    '@resources' => '@res',
+    '@conf' => BASE_PATH . '/conf',
+    '@config' => '@conf',
+    '@tmp' => BASE_PATH . '/tmp',
+    '@web' => BASE_PATH . '/web',
+]);

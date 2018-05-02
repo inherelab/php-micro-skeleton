@@ -12,6 +12,7 @@ use App\Listener\AppListener;
 use App\Provider\CommonServiceProvider;
 use App\Provider\ConsoleServiceProvider;
 use App\Provider\WebServiceProvider;
+use Inhere\Route\ORouter;
 use Mco\Component\EnvDetector;
 use Toolkit\PhpUtil\PhpDotEnv;
 use Mco\Http\App as WebApp;
@@ -72,7 +73,7 @@ class Bootstrap
 
         // Set the MB extension encoding to the same character set
         if (\function_exists('mb_internal_encoding')) {
-            mb_internal_encoding('utf-8');
+            \mb_internal_encoding('utf-8');
         }
 
         switch (APP_ENV) {
@@ -80,7 +81,7 @@ class Bootstrap
             case APP_TEST:
                 ini_set('display_errors', 1);
                 ini_set('display_startup_errors', 1);
-                error_reporting(-1);
+                error_reporting(\E_ALL);
                 break;
             default:
                 ini_set('display_errors', 0);
@@ -110,6 +111,7 @@ class Bootstrap
 
         if (RUN_MODE === 'web') {
             $app = new WebApp(require \dirname(__DIR__) . '/conf/web.php');
+            $this->loadWebRoutes($app->get('router'));
         } else {
             $app = new CliApp(require \dirname(__DIR__) . '/conf/console.php');
         }
@@ -118,5 +120,13 @@ class Bootstrap
         $em->attach('app', new AppListener());
 
         return $app;
+    }
+
+    /**
+     * @param ORouter $router
+     */
+    private function loadWebRoutes(ORouter $router)
+    {
+        include BASE_PATH . '/app/Http/routes.php';
     }
 }

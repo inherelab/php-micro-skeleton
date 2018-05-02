@@ -15,6 +15,10 @@ return Arr::merge(require __DIR__ . '/config.php', [
             'https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js',
         ]
     ],
+    'serviceProviders' => [
+        \App\Provider\ConsoleServiceProvider::class,
+    ],
+
     'services' => [
         'logger' => [
             'name' => 'console',

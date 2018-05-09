@@ -27,7 +27,9 @@
     "inhere/lite-db": "dev-master",
     "inhere/micro-framework": "dev-master",
     "inhere/simple-active-record": "dev-master",
+    "inhere/process": "dev-master",
     "inhere/server": "dev-master",
+    "inhere/code-generator": "dev-master",
     "swoole-kit/http-server": "dev-master",
     "swoole-kit/websocket-server": "dev-master",
     "toolkit/toolkit": "dev-master as 1.0",
@@ -59,9 +61,13 @@
       "type": "git",
       "url": "https://github.com/inhere/php-database"
     },
+    "1": {
+      "type": "git",
+      "url": "https://github.com/inhere/php-process"
+    },
     "2": {
       "type": "git",
-      "url": "https://github.com/inhere/php-microFramework"
+      "url": "https://github.com/inhere/code-generator"
     }
   },
   "config": {

@@ -8,12 +8,12 @@
 
 namespace App\Http\Controller;
 
-use Mco\Http\BaseController;
+use Mco\Http\HttpController;
 
 /**
  * class ErrorController
  */
-class ErrorController extends BaseController
+class ErrorController extends HttpController
 {
     public function indexAction()
     {

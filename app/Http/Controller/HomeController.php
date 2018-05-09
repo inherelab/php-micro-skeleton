@@ -10,12 +10,12 @@ namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
 use Mco\Helper\Respond;
-use Mco\Http\BaseController;
+use Mco\Http\HttpController;
 
 /**
  * class HomeController
  */
-class HomeController extends BaseController
+class HomeController extends HttpController
 {
     public function indexAction()
     {

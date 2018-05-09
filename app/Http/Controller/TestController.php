@@ -9,12 +9,12 @@
 namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
-use Mco\Http\BaseController;
+use Mco\Http\HttpController;
 
 /**
  * class HomeController
  */
-class TestController extends BaseController
+class TestController extends HttpController
 {
     /**
      * @SWG\Post(

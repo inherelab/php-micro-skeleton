@@ -16,7 +16,7 @@ use Inhere\LiteCache\LiteRedis;
 use Toolkit\DI\Container;
 use Toolkit\DI\ServiceProviderInterface;
 use Inhere\LiteCache\RedisCache;
-use Inhere\LiteDb\ExtendedPdo;
+use Inhere\LiteDb\LitePdo;
 
 /**
  * Class CommonServiceProvider
@@ -54,7 +54,7 @@ class CommonServiceProvider implements ServiceProviderInterface
             ]));
             $config = $di->get('config')->get('mainMysql.master');
 
-            return new ExtendedPdo($config);
+            return new LitePdo($config);
         });
 
         $di->set('mainMysql.slave', function (Container $di) {
@@ -67,7 +67,7 @@ class CommonServiceProvider implements ServiceProviderInterface
             $config = $di->get('config')->get('mainMysql.slave');
             // $db->setEventManager($em);
 
-            return new ExtendedPdo($config);
+            return new LitePdo($config);
         });
 
         // Mongo: Connecting to Mongo

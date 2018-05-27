@@ -2,9 +2,6 @@
 /**
  * the common config
  */
-
-use Inhere\Library\Utils\LiteLogger;
-
 return [
     'name'    => env('APP_NAME', 'My App'),
     'debug'    => env('APP_DEBUG', false),
@@ -32,11 +29,11 @@ return [
          */
 
         'logger' => [
-            'class'       => LiteLogger::class,
+            'class'       => \Mco\Log\FileLogger::class,
             'name'         => 'app',
             'logFile'      => '@tmp/logs/application.log',
             'basePath'     => '@tmp/logs',
-            'level'        => LiteLogger::DEBUG,
+            'level'        => \Mco\Log\FileLogger::DEBUG,
             'splitType'    => 1,
             'bufferSize'   => 1000, // 1000,
             'pathResolver' => 'alias',

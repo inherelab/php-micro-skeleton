@@ -3,7 +3,7 @@
  * Created by automatic generator
  * User: inhere
  * Date: 2018-05-27
- * Time: 12:16
+ * Time: 13:03
  * Template: res/templates/routes.stub
  *
  * @notice Please don't edit this file, it is auto-generated.
@@ -30,4 +30,6 @@ $router->map(['GET'], '/home/json', 'App\Http\Controller\HomeController@json');
 
 /** @see \App\Http\Controller\RestController */
 $router->map(['GET'], '/rest', 'App\Http\Controller\RestController@index');
+$router->map(['GET'], '/{id}', 'App\Http\Controller\RestController@view');
+$router->map(['GET'], '/rest', 'App\Http\Controller\RestController@create');
 

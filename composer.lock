@@ -112,7 +112,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/code-generator",
-                "reference": "98b0edaf047ffdd7cac1a019100bdeb2a6daba41"
+                "reference": "ce6f8ba75ee55b53704b14bdd8b3e27dbe023bad"
             },
             "require": {
                 "php": ">=7.0.0",
@@ -152,7 +152,7 @@
                 "library",
                 "tpl-generator"
             ],
-            "time": "2017-12-31T15:17:56+00:00"
+            "time": "2018-05-09T16:09:05+00:00"
         },
         {
             "name": "inhere/console",
@@ -160,12 +160,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "eb6b1ddff484673697c20b704f445d40b0fab07b"
+                "reference": "169f82345c732075a8cf9f4944a893b9f1662ae0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-console/eb6b1ddff484673697c20b704f445d40b0fab07b.zip",
-                "reference": "eb6b1ddff484673697c20b704f445d40b0fab07b",
+                "url": "https://files.phpcomposer.com/files/inhere/php-console/169f82345c732075a8cf9f4944a893b9f1662ae0.zip",
+                "reference": "169f82345c732075a8cf9f4944a893b9f1662ae0",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +206,7 @@
                 "console-color",
                 "library"
             ],
-            "time": "2018-05-07T15:41:53+00:00"
+            "time": "2018-05-27T02:26:23+00:00"
         },
         {
             "name": "inhere/database",
@@ -506,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-microFramework.git",
-                "reference": "8cfe499dbdec4635b28a698a5f2fc2d8717ae4e2"
+                "reference": "49a63c6f9126893cd077930f5cb67c34bec2f548"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-microFramework/8cfe499dbdec4635b28a698a5f2fc2d8717ae4e2.zip",
-                "reference": "8cfe499dbdec4635b28a698a5f2fc2d8717ae4e2",
+                "url": "https://files.phpcomposer.com/files/inhere/php-microFramework/49a63c6f9126893cd077930f5cb67c34bec2f548.zip",
+                "reference": "49a63c6f9126893cd077930f5cb67c34bec2f548",
                 "shasum": ""
             },
             "require": {
@@ -558,7 +558,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-05-08T16:23:43+00:00"
+            "time": "2018-05-26T17:31:09+00:00"
         },
         {
             "name": "inhere/middleware",
@@ -757,12 +757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-simple-activeRecord.git",
-                "reference": "d5300021ee7be67601391845390449d0c8f089ef"
+                "reference": "300e69e33a1b1e4cd1f13a9c015af32146d40a0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/d5300021ee7be67601391845390449d0c8f089ef.zip",
-                "reference": "d5300021ee7be67601391845390449d0c8f089ef",
+                "url": "https://files.phpcomposer.com/files/inhere/php-simple-activeRecord/300e69e33a1b1e4cd1f13a9c015af32146d40a0c.zip",
+                "reference": "300e69e33a1b1e4cd1f13a9c015af32146d40a0c",
                 "shasum": ""
             },
             "require": {
@@ -804,7 +804,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-05-08T16:20:04+00:00"
+            "time": "2018-05-25T18:13:54+00:00"
         },
         {
             "name": "inhere/sroute",
@@ -1624,16 +1624,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.9",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "4b7d64e852886319e93ddfdecff0d744ab87658b"
+                "reference": "4cbf2db9abcb01486a21b7a059e03a62fae63187"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/process/4b7d64e852886319e93ddfdecff0d744ab87658b.zip",
-                "reference": "4b7d64e852886319e93ddfdecff0d744ab87658b",
+                "url": "https://files.phpcomposer.com/files/symfony/process/4cbf2db9abcb01486a21b7a059e03a62fae63187.zip",
+                "reference": "4cbf2db9abcb01486a21b7a059e03a62fae63187",
                 "shasum": ""
             },
             "require": {
@@ -1669,20 +1669,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-03T05:22:50+00:00"
+            "time": "2018-05-16T08:49:21+00:00"
         },
         {
             "name": "text/template",
-            "version": "v2.3.1",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dermatthes/text-template.git",
-                "reference": "04e3d57227ceffb758a9f4ec7157a537b3d3df56"
+                "reference": "153db4db7ec85ba4d0ea0c46f20dd3d0280b3904"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/dermatthes/text-template/04e3d57227ceffb758a9f4ec7157a537b3d3df56.zip",
-                "reference": "04e3d57227ceffb758a9f4ec7157a537b3d3df56",
+                "url": "https://files.phpcomposer.com/files/dermatthes/text-template/153db4db7ec85ba4d0ea0c46f20dd3d0280b3904.zip",
+                "reference": "153db4db7ec85ba4d0ea0c46f20dd3d0280b3904",
                 "shasum": ""
             },
             "require": {
@@ -1691,7 +1691,7 @@
             "require-dev": {
                 "nette/tester": "*",
                 "phpunit/phpcov": "^2.0",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": "*"
             },
             "type": "library",
             "autoload": {
@@ -1710,7 +1710,7 @@
                 }
             ],
             "description": "Simple and secure string-template-engine (Twig-like syntax) with nested if/elseif/else, loops, filters. Simple OOP api: Just one class doing the job (2-lines of code). Fast and secure: No code-generation, no eval'ed() code. Extensible by callbacks. Fully tested. Rich examples included.",
-            "homepage": "http://github.com/dermatthes/text-template",
+            "homepage": "http://text-template.pub.leuffen.de",
             "keywords": [
                 "filter",
                 "for",
@@ -1723,7 +1723,7 @@
                 "text",
                 "twig"
             ],
-            "time": "2018-03-28T13:07:58+00:00"
+            "time": "2018-05-08T12:29:53+00:00"
         },
         {
             "name": "toolkit/errors",
@@ -2121,16 +2121,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.9",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ca27c02b7a3fef4828c998c2ff9ba7aae1641c49"
+                "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/finder/ca27c02b7a3fef4828c998c2ff9ba7aae1641c49.zip",
-                "reference": "ca27c02b7a3fef4828c998c2ff9ba7aae1641c49",
+                "url": "https://files.phpcomposer.com/files/symfony/finder/8c633f5a815903a1fe6e3fc135f207267a8a79af.zip",
+                "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af",
                 "shasum": ""
             },
             "require": {
@@ -2166,7 +2166,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-04T05:10:37+00:00"
+            "time": "2018-05-16T09:05:32+00:00"
         },
         {
             "name": "ulue/annotations",
@@ -2174,16 +2174,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ulue/Annotations.git",
-                "reference": "05c98782fbd0c891cef6a5578762c42b787fbb96"
+                "reference": "9754cc6c3129f58a5eb1f1740d7ed63b9b3018af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ulue/Annotations/05c98782fbd0c891cef6a5578762c42b787fbb96.zip",
-                "reference": "05c98782fbd0c891cef6a5578762c42b787fbb96",
+                "url": "https://files.phpcomposer.com/files/ulue/Annotations/9754cc6c3129f58a5eb1f1740d7ed63b9b3018af.zip",
+                "reference": "9754cc6c3129f58a5eb1f1740d7ed63b9b3018af",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">7.0.0",
+                "toolkit/obj-utils": "~1.0"
             },
             "type": "library",
             "autoload": {
@@ -2208,7 +2209,7 @@
             ],
             "description": "Simple and Lightweight PHP Class & Methods Annotations Reader",
             "homepage": "https://github.com/ulue/Annotations",
-            "time": "2018-01-27T07:55:33+00:00"
+            "time": "2018-05-14T12:51:20+00:00"
         },
         {
             "name": "zircote/swagger-php",

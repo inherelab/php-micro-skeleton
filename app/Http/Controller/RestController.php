@@ -11,35 +11,45 @@ namespace App\Http\Controller;
 /**
  * Class RestController
  * @package App\Http\Controllers
+ * @Controller()
  */
 class RestController
 {
-    public function indexAction()
+    /**
+     * @Route("@")
+     */
+    public function index()
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function viewAction()
+    /**
+     * @Route("/{id}")
+     */
+    public function view()
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function createAction()
+    /**
+     * @Route("@", method="POST")
+     */
+    public function create()
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function updateAction()
+    public function update()
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function patchAction()
+    public function patch()
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function deleteAction()
+    public function delete()
     {
         echo __METHOD__ . PHP_EOL;
     }

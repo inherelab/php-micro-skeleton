@@ -9,8 +9,6 @@
 namespace App\Provider;
 
 use App\Listener\MysqlListener;
-use Inhere\Event\EventManager;
-use Toolkit\Collection\Configuration;
 use Inhere\LiteCache\MemCache;
 use Inhere\LiteCache\LiteRedis;
 use Toolkit\DI\Container;
@@ -27,9 +25,9 @@ class CommonServiceProvider implements ServiceProviderInterface
     /**
      * 注册一项服务(可能含有多个服务)提供者到容器中
      * @param Container $di
+     * @throws \Toolkit\DI\Exception\DependencyResolutionException
      * @throws \RuntimeException
      * @throws \InvalidArgumentException
-     * @throws \Inhere\Exceptions\DependencyResolutionException
      */
     public function register(Container $di)
     {
@@ -47,21 +45,23 @@ class CommonServiceProvider implements ServiceProviderInterface
     private function registerDbServices(Container $di)
     {
         // MySQL: Database connection
-        $di->set('mainMysql.master', function (Container $di) {
+        $di->set('db.master', function (Container $di) {
+            /** @var \Inhere\Event\EventManager $em */
             $em = $di->get('eventManager');
             $em->attach('db', new MysqlListener([
-                'service' => 'mainMysql.master'
+                'service' => 'db.master'
             ]));
             $config = $di->get('config')->get('mainMysql.master');
 
             return new LitePdo($config);
         });
 
-        $di->set('mainMysql.slave', function (Container $di) {
+        $di->set('db.slave', function (Container $di) {
+            /** @var \Inhere\Event\EventManager $em */
             $em = $di->get('eventManager');
             $em->attach('db', new MysqlListener([
                 'role' => 'slave',
-                'service' => 'mainMysql.slave'
+                'service' => 'db.slave'
             ]));
 
             $config = $di->get('config')->get('mainMysql.slave');
@@ -71,7 +71,7 @@ class CommonServiceProvider implements ServiceProviderInterface
         });
 
         // Mongo: Connecting to Mongo
-        $di->set('mainMongo', function (Container $di) {
+        $di->set('mongo', function (Container $di) {
             $config = $di->get('config')->get('mainMongo');
 
             // 'mongodb:///tmp/mongodb-27017.sock,localhost:27017'
@@ -83,7 +83,7 @@ class CommonServiceProvider implements ServiceProviderInterface
 
     /**
      * @param Container $di
-     * @throws \Inhere\Exceptions\DependencyResolutionException
+     * @throws \Toolkit\DI\Exception\DependencyResolutionException
      */
     private function registerCacheServices(Container $di)
     {

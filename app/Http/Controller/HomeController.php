@@ -14,20 +14,30 @@ use Mco\Http\HttpController;
 
 /**
  * class HomeController
+ * @Controller()
  */
 class HomeController extends HttpController
 {
-    public function indexAction()
+    /**
+     * @Route(route="/", method="GET")
+     * Route(route="/*", method="GET")
+     * @return string
+     */
+    public function index()
     {
         echo 'OOO';
         //\var_dump(__METHOD__);
         return 'hello, world';
     }
 
-    public function logAction()
+    /**
+     * @Route()
+     * @return string
+     * @throws \Throwable
+     */
+    public function log()
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;
-//de(\Mco::get('config')->all());
 
         d(\Mco::get('logger'));
 
@@ -40,7 +50,12 @@ class HomeController extends HttpController
         return $this->renderContent($content);
     }
 
-    public function routesAction($ctx)
+    /**
+     * @Route()
+     * @param $ctx
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    public function routes($ctx)
     {
         /** @var \Inhere\Route\ORouter $router */
         $router = \Mco::$di->get('router');
@@ -55,7 +70,11 @@ class HomeController extends HttpController
         ]);
     }
 
-    public function testAction()
+    /**
+     * @Route()
+     * @throws \Inhere\Exceptions\FileSystemException
+     */
+    public function test()
     {
 
         $lgr = LiteLogger::make([
@@ -73,16 +92,22 @@ class HomeController extends HttpController
         echo 'hello';
     }
 
-    public function configAction()
+    /**
+     * @Route()
+     */
+    public function config()
     {
         echo 'ddd';
     }
 
+    /**
+     * @Route()
+     */
     public function json()
     {
         \Mco::trace('test info');
 
-        Mco::$app->output->json([
+        Respond::rawJson([
             'code' => 0,
             'msg' => 'successful!',
             'data' => [

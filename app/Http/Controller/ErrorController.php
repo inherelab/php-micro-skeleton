@@ -12,25 +12,46 @@ use Mco\Http\HttpController;
 
 /**
  * class ErrorController
+ * @Controller()
  */
 class ErrorController extends HttpController
 {
-    public function indexAction()
+    /**
+     * @Route(route="/error")
+     * @return string
+     * @throws \Throwable
+     */
+    public function index(): string
     {
-        return $this->errorAction();
+        return $this->error();
     }
 
-    public function errorAction()
+    /**
+     * @Route(route="/500")
+     * @return string
+     * @throws \Throwable
+     */
+    public function error(): string
     {
         return $this->renderPartial('@resources/views/500.tpl');
     }
 
-    public function notFoundAction()
+    /**
+     * @Route(route="/404")
+     * @return string
+     * @throws \Throwable
+     */
+    public function notFound(): string
     {
         return $this->renderPartial('@resources/views/404.tpl');
     }
 
-    public function notAllowedAction()
+    /**
+     * @Route(route="/405")
+     * @return string
+     * @throws \Throwable
+     */
+    public function notAllowed(): string
     {
         return $this->renderPartial('@resources/views/405.tpl');
     }

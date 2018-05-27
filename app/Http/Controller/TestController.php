@@ -35,14 +35,14 @@ class TestController extends HttpController
      *      @SWG\Response(response="200", ref="#/responses/default")
      * )
      */
-    public function indexAction()
+    public function index()
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;
 
         return $this->renderContent($content);
     }
 
-    public function ctxAction($ctx)
+    public function ctx($ctx)
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;
 
@@ -51,7 +51,7 @@ class TestController extends HttpController
         return $this->renderContent($content);
     }
 
-    public function errAction()
+    public function err()
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;
 
@@ -61,22 +61,22 @@ class TestController extends HttpController
         return $this->renderContent($content);
     }
 
-    public function err1Action()
+    public function err1()
     {
         throw new \TypeError('test Type Error');
     }
 
-    public function err2Action()
+    public function err2()
     {
         call_not_exists_func();
     }
 
-    public function expAction()
+    public function exp()
     {
         throw new \RuntimeException('test Exception');
     }
 
-    public function logAction()
+    public function log()
     {
         //de(\Mco::get('config')->all());
 
@@ -89,7 +89,7 @@ class TestController extends HttpController
         de(\Mco::get('logger'));
     }
 
-    public function log1Action()
+    public function log1()
     {
 
         $lgr = LiteLogger::make([
@@ -107,7 +107,7 @@ class TestController extends HttpController
         echo 'hello';
     }
 
-    public function configAction()
+    public function config()
     {
         de(\Mco::get('config')->all());
     }

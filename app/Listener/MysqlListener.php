@@ -14,7 +14,6 @@ namespace App\Listener;
  */
 class MysqlListener
 {
-
     /**
      * @var array
      */

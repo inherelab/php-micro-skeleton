@@ -52,7 +52,7 @@ class Bootstrap
             if (!$envName = env('APP_ENV')) {
                 $envName = EnvDetector::getByHost() ?: EnvDetector::getByDomain(APP_PDT);
             }
-        } elseif (RUN_MODE === 'cli') {
+        } else {
             // Detect environment: allow change env by HOSTNAME
             if (!$envName = env('APP_ENV')) {
                 $envName = EnvDetector::getByHost(APP_PDT);
@@ -66,6 +66,7 @@ class Bootstrap
     }
 
     /**
+     * settingPhp
      */
     public function settingPhp()
     {
@@ -79,21 +80,21 @@ class Bootstrap
         switch (APP_ENV) {
             case APP_DEV:
             case APP_TEST:
-                ini_set('display_errors', 1);
-                ini_set('display_startup_errors', 1);
-                error_reporting(\E_ALL);
+                \ini_set('display_errors', 1);
+                \ini_set('display_startup_errors', 1);
+                \error_reporting(\E_ALL);
                 break;
             default:
-                ini_set('display_errors', 0);
-                ini_set('display_startup_errors', 0);
-                error_reporting(0);
+                \ini_set('display_errors', 0);
+                \ini_set('display_startup_errors', 0);
+                \error_reporting(0);
                 break;
         }
 
         if (PHP_SAPI === 'cli') {
-            ini_set('html_errors', 0);
+            \ini_set('html_errors', 0);
         } else {
-            ini_set('html_errors', 1);
+            \ini_set('html_errors', 1);
         }
 
         return $this;
@@ -107,7 +108,7 @@ class Bootstrap
     protected function createApp()
     {
         // on runtime end.
-        \register_shutdown_function(AppListener::class . '::onRuntimeEnd');
+        \register_shutdown_function(AppListener::class . '::endOfRun');
 
         if (RUN_MODE === 'web') {
             $app = new WebApp(require \dirname(__DIR__) . '/conf/web.php');

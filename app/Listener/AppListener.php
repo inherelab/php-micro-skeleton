@@ -43,7 +43,7 @@ class AppListener
         app('logger')->info("handle the event {$event->getName()} on the: $pos");
     }
 
-    public static function onRuntimeEnd()
+    public static function endOfRun()
     {
 
     }
